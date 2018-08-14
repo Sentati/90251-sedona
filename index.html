@@ -1,122 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="utf-8">
-	<title>HTML Academy: Седона</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
 </head>
+
 <body>
-	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo">
-				<img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип">
-			</a>
-			<ul class="site-navigation">
-				<li><a href="info.html">Информация</a></li>
-				<li><a href="photo.html">Фотографии и видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
-				<li><a href="catalog.html">Гостиницы</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section class="offer">
-			<h1 class="visually-hidden">Седона</h1>
-      	<!-- Секция была сверстана неправильно: в ней нет текста. Все надписи выполнены в svg.
-      		Поэтому просто добавляю скрытый заголовок, а все остальное будет сделано в CSS: -->
-      	</section>
-      	<section class="benefits">
-      		<h2 class="visually-hidden">Седона</h2>
-      		<p class="benefits-title"><strong>Седона</strong> — небольшой городок в Аризоне, заслуживающий большего!</p>
-      		<p class="benefits-desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      	</section>
-      	<section class="reason">
-      		<div class="reason-basic">
-      			<div class="reason-lead">
-      				<p class="reason-title">Настоящий городок</p>
-      				<p class="reason-subtitle">№1</p>
-      				<p class="reason-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>	
-      			</div>
-      			<div class="reason-img">
-      				<!-- Изображение вставлю фоном -->
-      			</div>
-      		</div>
-      		<ul class="reason-list">
-      			<li class="reason-item-house">
-      				<p class="reason-item-title">Жильё</p>
-      				<p class="reason-item-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-      				<!-- Иконку добавлю в CSS -->
-      			</li>
-      			<li class="reason-item-food">
-      				<p class="reason-item-title">Еда</p>
-      				<p class="reason-item-desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-      				<!-- Иконку добавлю в CSS -->
-      			</li>
-      			<li class="reason-item-Souvenirs">
-      				<p class="reason-item-title">Сувениры</p>
-      				<p class="reason-item-desc">Не только китайского, но и местного производства!</p>
-      				<!-- Иконку добавлю в CSS -->
-      			</li>
-      		</ul>
-      		<div class="reason-basic">
-      			<div class="reason-img">
-      				<!-- Изображение вставлю фоном -->
-      			</div>
-      			<div class="reason-lead">
-      				<p class="reason-title">Там есть Мост дьявола</p>
-      				<p class="reason-subtitle">№2</p>
-      				<p class="reason-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-      			</div>
-      		</div>
-      		<div class=reason-others>
-      			<ul class="reason-others-list">
-      				<li class="reason-others-item">
-      					<p class="reason-others-item-title">Небольшая площадь</p>
-      					<p class="reason-others-item-subtitle">№3</p>
-      					<p class="reason-others-item-desc">Все достопримечательности находятся очень близко</p>
-      				</li>
-      				<li class="list-item">
-      					<p class="reason-others-item-title">Красивая дорога</p>
-      					<p class="reason-others-item-subtitle">№4</p>
-      					<p class="reason-others-item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      				</li>
-      				<li class="reason-others-item">
-      					<p class="reason-others-item--title">Мало туристов</p>
-      					<p class="reason-others-item-subtitle">№5</p>
-      					<p class="reason-others-item-desc">Большинство едет в гранд каньон и толпится там</p>
-      				</li>
-      			</ul>
-      		</div>
-      	</section>
-      	<section class="invitation">
-      		<div class="invitation-lead">
-      			<h2 class="visually-hidden">Приезжайте в Седону</h2>
-      			<span class="invitation-title">Заинтересовались?</span>
-      			<p class="invitation-desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      			<button class="button invitation-button">Поиск гостиницы в Седоне</button>
-      		</div>
-      	</section>
-      	<section class="map">
-      		<h2 class="visually-hidden">Как добраться</h2>
-      		<!-- Здесь будет карта -->
-      		<img src="img/map.png" width="1718" height="748" alt="Карта">
-      	</section>
-      </main>
-      <footer class="main-footer main-footer_index">
-      	<p class="footer-visit">#visitSedona></p>
-      	<ul class="footer-social">
-      		<li><a href="#" class="button-social"><img src="img/twitter-icon.svg" width="17" height="15" alt="Твиттер"></a></li>	
-      		<li><a href="#" class="button-social"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-      		<li><a href="#" class="button-social"><img src="img/youtube-icon.svg" width="20" height="16" alt="Ютуб"></a></li>
-      	</ul>
-      	<div class="footer-copyright">
-      		<p class="copyright-desc">Website by</p>
-      		<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo">HTML<br>academy</a>
-      	</div>
-      </footer>
-      <section class="modal">
-      	<h2 class="visually-hidden">Поиск гостиницы</h2>
-      	<!-- Здесь будет форма-->
-      </section>
-    </body>
-    </html>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="photo.html">Фотографии и видео</a></li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="offer">
+      <h1 class="visually-hidden">Седона</h1>
+      <img src="img/intro-welcome.svg" width="459" height="353" alt="WELCOM to the gorgeous SEDONA Becouse the Grand Canyon sucs">
+      <!-- Все надписи выполнены в svg.
+          Поэтому добавляю скрытый заголовок  Изображение гор вставлю фоном-->
+    </section>
+    <section class="benefits">
+      <h2 class="visually-hidden">Седона</h2>
+      <p class="benefits-title"><strong>Седона</strong> — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="benefits-desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>
+    <section class="reason">
+      <div class="reason-basic">
+        <div class="reason-lead">
+          <p class="reason-title">Настоящий городок</p>
+          <p class="reason-subtitle">№1</p>
+          <p class="reason-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <div class="reason-img">
+          <!-- Изображение вставлю фоном -->
+        </div>
+      </div>
+      <ul class="reason-list">
+        <li class="reason-item-house">
+          <p class="reason-item-title">Жильё</p>
+          <p class="reason-item-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <!-- Иконку добавлю в CSS -->
+        </li>
+        <li class="reason-item-food">
+          <p class="reason-item-title">Еда</p>
+          <p class="reason-item-desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <!-- Иконку добавлю в CSS -->
+        </li>
+        <li class="reason-item-Souvenirs">
+          <p class="reason-item-title">Сувениры</p>
+          <p class="reason-item-desc">Не только китайского, но и местного производства!</p>
+          <!-- Иконку добавлю в CSS -->
+        </li>
+      </ul>
+      <div class="reason-basic">
+        <div class="reason-img">
+          <!-- Изображение вставлю фоном -->
+        </div>
+        <div class="reason-lead">
+          <p class="reason-title">Там есть Мост дьявола</p>
+          <p class="reason-subtitle">№2</p>
+          <p class="reason-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </div>
+      <div class=reason-others>
+        <ul class="reason-others-list">
+          <li class="reason-others-item">
+            <p class="reason-others-item-title">Небольшая площадь</p>
+            <p class="reason-others-item-subtitle">№3</p>
+            <p class="reason-others-item-desc">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="list-item">
+            <p class="reason-others-item-title">Красивая дорога</p>
+            <p class="reason-others-item-subtitle">№4</p>
+            <p class="reason-others-item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="reason-others-item">
+            <p class="reason-others-item--title">Мало туристов</p>
+            <p class="reason-others-item-subtitle">№5</p>
+            <p class="reason-others-item-desc">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="invitation">
+      <div class="invitation-lead">
+        <h2 class="visually-hidden">Приезжайте в Седону</h2>
+        <span class="invitation-title">Заинтересовались?</span>
+        <p class="invitation-desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="button invitation-button">Поиск гостиницы в Седоне</button>
+      </div>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Как добраться</h2>
+      <!-- Здесь будет карта -->
+      <!-- вставлю карту фоном -->
+    </section>
+  </main>
+  <footer class="main-footer main-footer_index">
+    <p class="footer-visit">#visitSedona></p>
+    <ul class="footer-social">
+      <li><a href="#" class="button-social">
+        <span class="visually-hidden">Твитер<span/>
+        <!-- <svg> -->
+      </a></li>
+      <li><a href="#" class="button-social">
+        <span class="visually-hidden">Фейсбук<span/>
+      </a></li>
+      <li><a href="#" class="button-social">
+        <span class="visually-hidden">Ютуб<span/>
+        </a></li>
+    </ul>
+    <div class="footer-copyright">
+      <p class="copyright-desc">Website by</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo">HTML<br>academy</a>
+    </div>
+  </footer>
+  <section class="modal">
+    <h2 class="visually-hidden">Поиск гостиницы</h2>
+    <!-- Здесь будет форма-->
+  </section>
+</body>
+
+</html>
 <!-- в изображениях svg (кроме лого Седоны) размеры указаны в самих файлах, а зачем их еще раз в верстке указывать? Прописала, потому что на демке ко второму занятию эти размеры есть-->
