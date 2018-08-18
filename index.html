@@ -95,16 +95,85 @@
         <h2 class="visually-hidden">Приезжайте в Седону</h2>
         <span class="invitation-title">Заинтересовались?</span>
         <p class="invitation-desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button invitation-button">Поиск гостиницы в Седоне</button>
+        <button class="button invitation-button" type="button">Поиск гостиницы в Седоне</button>
       </div>
       <div class="invitation-form">
-        <!-- Здесь будет форма-->
+        <form class="invitation-form-search" action="https://echo.htmlacademy.ru" method="post">
+          <div class="invitation-form-item">
+            <label class="invitation-date">Дата заезда
+              <input type="text" name="date" value="" placeholder="24 апреля 2017">
+              <button class="invitation-calendar" type="button">
+                <span class="visually-hidden">Календарь</span>
+                <!-- <svg> -->
+              </button>
+            </label>
+          </div>
+          <div class="invitation-item">
+            <label class="invitation-date">Дата выезда
+              <input type="text" name="date" value="" placeholder="4 июля 2017">
+              <button class="invitation-calendar" type="button">
+                <span class="visually-hidden">Календарь</span>
+                <!-- <svg> -->
+              </button>
+            </label>
+          </div>
+          <div class="invitation-item">
+            <label class="invitation-adult">Взрослые
+              <table class="invitation-content">
+                <td>
+                  <tr>
+                    <a href="#" class="button-invitation-less">
+                      <span class="invitation-icon-minus"></span>
+                      <span class="visually-hidden">Меньше</span>
+                    </a>
+                  </tr>
+                  <tr>
+                    <input type="text" name="adult" value="" placeholder="2">
+                  </tr>
+                  <tr>
+                    <a href="#" class="button-invitation-more">
+                      <span class="invitation-icon-plus"></span>
+                      <span class="visually-hidden">Больше</span>
+                    </a>
+                  </tr>
+                </td>
+              </table>
+            </label>
+          </div>
+          <div class="invitation-item">
+            <label class="invitation-child">Дети
+              <table class="invitation-content">
+                <td>
+                  <tr>
+                    <a href="#" class="button-invitation-less">
+                      <span class="invitation-icon-minus"></span
+                      <span class="visually-hidden">Меньше</span>
+                    </a>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" name="child" value="" placeholder="0">
+                    </td>
+                  </tr>
+                  <tr>
+                    <a href="#" class="button-invitation-more">
+                      <span class="invitation-icon-plus"></span
+                      <span class="visually-hidden">Больше</span>
+                    </a>
+                  </tr>
+                </td>
+              </table>
+            </label>
+          </div>
+          <button class="button invitation-form-button" type="submit">Найти</button>
+        </form>
       </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Как добраться</h2>
-      <!-- Здесь будет карта -->
-      <!-- вставлю карту фоном -->
+      <p>
+        <img src="img/map.png" width="1200" height="593" alt="Карта штата">
+      </p>
     </section>
   </main>
   <footer class="main-footer main-footer_index">
