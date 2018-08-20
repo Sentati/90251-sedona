@@ -35,8 +35,8 @@
                   <input id="filter-pool" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
                   <label for="filter-pool">Бассейн</label>
                 </li>
-                <li id="filter-parking" class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
+                <li class="filter-option">
+                  <input  id="filter-parking" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
                   <label for="filter-parking">Парковка</label>
                 </li>
                 <li class="filter-option">
@@ -73,33 +73,35 @@
                     <input type="text" name="price-max" value="" placeholder="3000">
                   </td>
                 </tr>
-                <div>
-                  <button class="button-filter-price" type="button">
-                    <span class="button-filter-choice">0</span>
-                    <span class="visually-hidden">Минимальная стоимость</span>
-                    <!-- <svg> -->
-                  </button>
-                  <input id="filter-price" class="visually-hidden" type="range" min="0" max="4000">
-                </div>
+              </table>
+              <div>
+                <button class="button-filter-price" type="button">
+                  <span class="button-filter-choice">0</span>
+                  <span class="visually-hidden">Минимальная стоимость</span>
+                  <!-- <svg> -->
+                </button>
+                <input id="filter-price" class="visually-hidden" type="range" min="0" max="4000">
+              </div>
+              <button class="button-filter-button" type="submit">Показать</button>
             </fieldset>
-            <button class="button-filter-button" type="submit">Показать</button>
+            <!-- Изображение вставлю фоном -->
           </form>
-          <!-- Изображение вставлю фоном -->
         </div>
-        <div class="sort">
-          <p class="sort-result">Найдено: 3</p>
-          <p class="sort-select">Сортировка</p>
-          <ul class="sort-list">
-            <li class="sort-current">
-              <button>По цене</button>
-            </li>
-            <li class="sort-current">
-              <button>>По типу</button>
-            </li>
-            <li class="sort-current">
-              <button>>По рейтингу</button>
-            </li>
-          </ul>
+          <div class="sort">
+            <p class="sort-result">Найдено: 3</p>
+            <p class="sort-select">Сортировка</p>
+            <ul class="sort-list">
+              <li class="sort-current">
+                <button>По цене</button>
+              </li>
+              <li class="sort-current">
+                <button>>По типу</button>
+              </li>
+              <li class="sort-current">
+                <button>>По рейтингу</button>
+              </li>
+            </ul>
+          </div>
           <div class="sort-switch">
             <!-- Здесь будет переключалка-->
             <button class="sort-switch">
@@ -121,51 +123,18 @@
             </a>
             <div class="catalog-hotel-desc">
               <h2><a href="catalog-item.html">Amara Resort & Spa</a></h2>
-              <div classs="catalog-hotel-type">
+              <div class="catalog-hotel-type">
                 <p>Гостиница</p>
                 <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
               </div>
-              <div classs="catalog-hotel-price">
+              <div class="catalog-hotel-price">
                 <p>От 4000 Р.</p>
                 <a href="#" class="button button-reserve">Забронировать</a>
               </div>
             </div>
-            <div class="rating">
-              <p>
-                <label for="rating-star-5" class="visually-hidden">Высший рейтинг</label>
-                <input id="rating-star-5" type="radio" name="stars" value="5" checked>
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-4" class="visually-hidden">Хороший рейтинг</label>
-                <input id="rating-star-4" type="radio" name="stars" value="4">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-3" class="visually-hidden">Средний рейтинг</label>
-                <input id="rating-star-3" type="radio" name="stars" value="3">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-2" class="visually-hidden">Низкий рейтинг</label>
-                <input id="rating-star-2" type="radio" name="stars" value="2">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-1" class="visually-hidden">Очень низкий рейтинг</label>
-                <input id="rating-star-1" type="radio" name="stars" value="1">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-0" class="visually-hidden">Без оценки</label>
-                <input id="rating-star-0" type="radio" name="stars" value="0">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <a href="#" class="button rating-middle-button">
-                 <span class="rating-middle">Рейтинг: 8,5</span>
-                </a>
-              </p>
+            <div class="rate">
+              <p class="stars stars-four"><span class="visually-hidden">4 звезды</span></p>
+              <p class="rating">Рейтинг 8,5</p>
             </div>
           </li>
           <li>
@@ -174,51 +143,18 @@
             </a>
             <div class="catalog-hotel-desc">
               <h2><a href="catalog-item.html">Desert Quail Inn</a></h2>
-              <div classs="catalog-hotel-type">
+              <div class="catalog-hotel-type">
                 <p>Мотель</p>
                 <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
               </div>
-              <div classs="catalog-hotel-price">
+              <div class="catalog-hotel-price">
                 <p>От 3000 Р.</p>
                 <a href="#" class="button button-reserve">Забронировать</a>
               </div>
             </div>
-            <div class="rating">
-              <p>
-                <label for="rating-star-5" class="visually-hidden">Высший рейтинг</label>
-                <input id="rating-star-5" type="radio" name="stars" value="5">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-4" class="visually-hidden">Хороший рейтинг</label>
-                <input id="rating-star-4" type="radio" name="stars" value="4">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-3" class="visually-hidden">Средний рейтинг</label>
-                <input id="rating-star-3" type="radio" name="stars" value="3" checked>
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-2" class="visually-hidden">Низкий рейтинг</label>
-                <input id="rating-star-2" type="radio" name="stars" value="2">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-1" class="visually-hidden">Очень низкий рейтинг</label>
-                <input id="rating-star-1" type="radio" name="stars" value="1">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-0" class="visually-hidden">Без оценки</label>
-                <input id="rating-star-0" type="radio" name="stars" value="0">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <a href="#" class="button rating-middle-button">
-                 <span class="rating-middle">Рейтинг: 8,9</span>
-                </a>
-              </p>
+            <div class="rate">
+              <p class="stars stars-three"><span class="visually-hidden">3 звезды</span></p>
+              <p class="rating">Рейтинг 8,9</p>
             </div>
           </li>
           <li>
@@ -227,51 +163,18 @@
             </a>
             <div class="catalog-hotel-desc">
               <h2><a href="catalog-item.html">Villas at Poco Diablo</a></h2>
-              <div classs="catalog-hotel-type">
+              <div class="catalog-hotel-type">
                 <p>Апартаменты</p>
                 <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
               </div>
-              <div classs="catalog-hotel-price">
+              <div class="catalog-hotel-price">
                 <p>От 2000 Р.</p>
                 <a href="#" class="button button-reserve">Забронировать</a>
               </div>
             </div>
-            <div class="rating">
-              <p>
-                <label for="rating-star-5" class="visually-hidden">Высший рейтинг</label>
-                <input id="rating-star-5" type="radio" name="stars" value="5">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-4" class="visually-hidden">Хороший рейтинг</label>
-                <input id="rating-star-4" type="radio" name="stars" value="4">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-3" class="visually-hidden">Средний рейтинг</label>
-                <input id="rating-star-3" type="radio" name="stars" value="3">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-2" class="visually-hidden">Низкий рейтинг</label>
-                <input id="rating-star-2" type="radio" name="stars" value="2" checked>
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-1" class="visually-hidden">Очень низкий рейтинг</label>
-                <input id="rating-star-1" type="radio" name="stars" value="1">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <label for="rating-star-0" class="visually-hidden">Без оценки</label>
-                <input id="rating-star-0" type="radio" name="stars" value="0">
-                <!-- <svg> -->
-              </p>
-              <p>
-                <a href="#" class="button rating-middle-button">
-                 <span class="rating-middle">Рейтинг: 9,2</span>
-                </a>
-              </p>
+            <div class="rate">
+              <p class="stars stars-two"><span class="visually-hidden">2 звезды</span></p>
+              <p class="rating">Рейтинг 9,2</p>
             </div>
           </li>
         </ul>

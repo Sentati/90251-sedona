@@ -33,6 +33,7 @@
       <p class="benefits-desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <section class="reason">
+      <h2 class="visually-hidden">Преимущества Седоны</h2>
       <div class="reason-basic">
         <div class="reason-lead">
           <p class="reason-title">Настоящий городок</p>
@@ -95,74 +96,50 @@
         <h2 class="visually-hidden">Приезжайте в Седону</h2>
         <span class="invitation-title">Заинтересовались?</span>
         <p class="invitation-desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button invitation-button" type="button">Поиск гостиницы в Седоне</button>
+        <button class="button button-calendar" type="button">Поиск гостиницы в Седоне</button>
       </div>
       <div class="invitation-form">
         <form class="invitation-form-search" action="https://echo.htmlacademy.ru" method="post">
           <div class="invitation-form-item">
             <label class="invitation-date">Дата заезда
               <input type="text" name="date" value="" placeholder="24 апреля 2017">
-              <button class="invitation-calendar" type="button">
+              <a class="button button-invitation-calendar">
                 <span class="visually-hidden">Календарь</span>
-                <!-- <svg> -->
-              </button>
+              </a>
             </label>
           </div>
-          <div class="invitation-item">
+          <div class="invitation-form-item">
             <label class="invitation-date">Дата выезда
               <input type="text" name="date" value="" placeholder="4 июля 2017">
-              <button class="invitation-calendar" type="button">
+              <a class="button button-invitation-calendar">
                 <span class="visually-hidden">Календарь</span>
-                <!-- <svg> -->
-              </button>
+              </a>
             </label>
           </div>
           <div class="invitation-item">
             <label class="invitation-adult">Взрослые
-              <table class="invitation-content">
-                <td>
-                  <tr>
-                    <a href="#" class="button-invitation-less">
-                      <span class="invitation-icon-minus"></span>
-                      <span class="visually-hidden">Меньше</span>
-                    </a>
-                  </tr>
-                  <tr>
-                    <input type="text" name="adult" value="" placeholder="2">
-                  </tr>
-                  <tr>
-                    <a href="#" class="button-invitation-more">
-                      <span class="invitation-icon-plus"></span>
-                      <span class="visually-hidden">Больше</span>
-                    </a>
-                  </tr>
-                </td>
-              </table>
+              <a href="#" class="button-invitation-less">
+                <span class="invitation-icon-minus"></span>
+                <span class="visually-hidden">Меньше</span>
+              </a>
+              <input type="text" name="adult" value="" placeholder="2">
+              <a href="#" class="button-invitation-more">
+                <span class="invitation-icon-plus"></span>
+                <span class="visually-hidden">Больше</span>
+              </a>
             </label>
           </div>
           <div class="invitation-item">
             <label class="invitation-child">Дети
-              <table class="invitation-content">
-                <td>
-                  <tr>
-                    <a href="#" class="button-invitation-less">
-                      <span class="invitation-icon-minus"></span
-                      <span class="visually-hidden">Меньше</span>
-                    </a>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input type="text" name="child" value="" placeholder="0">
-                    </td>
-                  </tr>
-                  <tr>
-                    <a href="#" class="button-invitation-more">
-                      <span class="invitation-icon-plus"></span
-                      <span class="visually-hidden">Больше</span>
-                    </a>
-                  </tr>
-                </td>
-              </table>
+              <a href="#" class="button-invitation-less">
+                <span class="invitation-icon-minus"></span>
+                <span class="visually-hidden">Меньше</span>
+              </a>
+              <input type="text" name="child" value="" placeholder="0">
+              <a href="#" class="button-invitation-more">
+                <span class="invitation-icon-plus"></span>
+                <span class="visually-hidden">Больше</span>
+              </a>
             </label>
           </div>
           <button class="button invitation-form-button" type="submit">Найти</button>
