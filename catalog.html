@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,9 +20,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фотографии и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li class="current">
-            <a href="catalog.html">Гостиницы</a>
-          </li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -27,7 +28,7 @@
       <section class="filter">
         <div class="form">
           <h2 class="visually-hidden">Фильтр</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Инфраструктура:</legend>
               <ul>
@@ -122,7 +123,7 @@
               <img src="img/amara.png" width="135" height="90" alt="Amara Resort & Spa">
             </a>
             <div class="catalog-hotel-desc">
-              <h2><a href="catalog-item.html">Amara Resort & Spa</a></h2>
+              <h2 class="pick"><a href="catalog-item.html">Amara Resort & Spa</a></h2>
               <div class="catalog-hotel-type">
                 <p>Гостиница</p>
                 <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
@@ -142,7 +143,7 @@
                 <img src="img/desert.png" width="135" height="90" alt="Desert Quail Inn">
             </a>
             <div class="catalog-hotel-desc">
-              <h2><a href="catalog-item.html">Desert Quail Inn</a></h2>
+              <h2 class="pick"><a  href="catalog-item.html">Desert Quail Inn</a></h2>
               <div class="catalog-hotel-type">
                 <p>Мотель</p>
                 <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
@@ -162,7 +163,7 @@
               <img src="img/villas.png" width="135" height="90" alt="Villas at Poco Diablo">
             </a>
             <div class="catalog-hotel-desc">
-              <h2><a href="catalog-item.html">Villas at Poco Diablo</a></h2>
+              <h2 class="pick"><a  href="catalog-item.html">Villas at Poco Diablo</a></h2>
               <div class="catalog-hotel-type">
                 <p>Апартаменты</p>
                 <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
