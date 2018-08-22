@@ -10,8 +10,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #2f2f2f;
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 * {
@@ -202,7 +200,7 @@ margin-top: 20px;
 
 .reason-others {
   background-color: #eeeeee;
-  padding-top 60px;
+  padding-top: 60px;
   padding-bottom: 50px;
 }
 
@@ -382,7 +380,7 @@ margin-top: 20px;
 }
 
 .footer-copyright a:link {
-  background-color: ##231f20;
+  background-color: #231f20;
 }
 
 .footer-copyright a:hover {
