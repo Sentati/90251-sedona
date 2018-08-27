@@ -19,6 +19,8 @@
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фотографии и видео</a></li>
+        </ul>
+        <ul class="user-navigation">
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -26,7 +28,6 @@
     </header>
     <main>
       <section class="offer">
-        <h1 class="visually-hidden">Седона</h1>
         <img class="offer-title" src="img/intro-welcome.svg" width="459" height="353" alt="WELCOM to the gorgeous SEDONA Becouse the Grand Canyon sucs">
       </section>
       <section class="benefits">
@@ -67,7 +68,7 @@
           <div class="reason-img-2">
             <!-- Изображение вставлю фоном -->
           </div>
-          <div class="reason-lead-2">
+          <div class="reason-lead">
             <p class="reason-title">Там есть Мост дьявола</p>
             <p class="reason-subtitle">№2</p>
             <p class="reason-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -80,7 +81,7 @@
               <p class="reason-others-item-subtitle">№3</p>
               <p class="reason-others-item-desc">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="reason-oters-item">
+            <li class="reason-others-item">
               <p class="reason-others-item-title">Красивая дорога</p>
               <p class="reason-others-item-subtitle">№4</p>
               <p class="reason-others-item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -94,8 +95,8 @@
         </div>
       </section>
       <section class="invitation">
+        <h2 class="visually-hidden">Приезжайте в Седону</h2>
         <div class="invitation-lead">
-          <h2 class="visually-hidden">Приезжайте в Седону</h2>
           <span class="invitation-title">Заинтересовались?</span>
           <p class="invitation-desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button button-calendar" type="button">Поиск гостиницы в Седоне</button>
@@ -103,50 +104,53 @@
         <div class="invitation-form">
           <form class="invitation-form-search" action="https://echo.htmlacademy.ru" method="post">
             <div class="invitation-form-item">
-              <label class="invitation-date">Дата заезда
+              <label class="invitation-date"><p>Дата заезда</p>
                 <input type="text" name="date" value="" placeholder="24 апреля 2017">
                 <a class="button button-invitation-calendar">
-                <span class="visually-hidden">Календарь</span>
+                  <span class="visually-hidden">Календарь</span>
               </a>
               </label>
             </div>
-            <div class="invitation-form-item">
-              <label class="invitation-date">Дата выезда
+            <div class="invitation-form-item departure">
+              <label class="invitation-date"><p>Дата выезда</p>
                 <input type="text" name="date" value="" placeholder="4 июля 2017">
-                <a class="button button-invitation-calendar">
+                  <a class="button button-invitation-calendar">
                 <span class="visually-hidden">Календарь</span>
               </a>
               </label>
             </div>
-            <div class="invitation-item">
-              <label class="invitation-adult">Взрослые
+          <div class="invitation-guests">
+            
+              <label class="invitation-adult"><p>Взрослые</p>
                 <a href="#" class="button-invitation-less">
                 <span class="invitation-icon-minus"></span>
-                <span class="visually-hidden">Меньше</span>
+                <span class="visually-hidden">меньше</span>
               </a>
                 <input type="text" name="adult" value="" placeholder="2">
                 <a href="#" class="button-invitation-more">
                 <span class="invitation-icon-plus"></span>
-                <span class="visually-hidden">Больше</span>
+                <span class="visually-hidden">больше</span>
               </a>
               </label>
-            </div>
-            <div class="invitation-item">
-              <label class="invitation-child">Дети
+          
+            
+              <label class="invitation-child"><p>Дети</p>
                 <a href="#" class="button-invitation-less">
                 <span class="invitation-icon-minus"></span>
-                <span class="visually-hidden">Меньше</span>
+                <span class="visually-hidden">меньше</span>
               </a>
                 <input type="text" name="child" value="" placeholder="0">
                 <a href="#" class="button-invitation-more">
                 <span class="invitation-icon-plus"></span>
-                <span class="visually-hidden">Больше</span>
+                <span class="visually-hidden">больше</span>
               </a>
               </label>
-            </div>
+            
+          </div>
             <button class="button invitation-form-button" type="submit">Найти</button>
           </form>
         </div>
+
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как добраться</h2>
@@ -183,6 +187,7 @@
       </div>
     </footer>
   </div>
+  </container>
 </body>
 
 </html>
