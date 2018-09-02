@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
@@ -7,20 +8,19 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-        <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTM4IDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0xMzggMEgwbDU5LjUxIDY1LjY4YzUuMjIgNS43NjEgMTMuNzYgNS43NjEgMTguOTggMHoiIGZpbGw9IiM4MWIzZDMiLz4KICA8cGF0aCBkPSJNMzYuNjg3LjQ1N2wzMi4xNDggMzcuODc5IDMyLjAyLTM3LjY1eiIgZmlsbD0iIzIzYTllMSIvPgogIDxwYXRoIGQ9Ik02MS4xIDE0LjcxOWgxNy4zMmMtMS4yOS0uOC00LjM1NS00LjU4Mi02LjA0My0zLjE3Ni0uMTM3LjExNS00Ljg3MS01Ljc0NC03Ljk4Mi0yLjkyMS0yLjcxMyAyLjQ2Ni0zLjk3My0uMzIzLTcuMDQ4IDEuNjMtMy41MDUgMi4zMTggMi4wMjYgMy42ODQgMy43NTMgNC40NjdtMjYuNzMtMy40NzhsLTkuODYuMDU0YzMuODk2LTQuNSA1LjY0Ny00LjAxOCA5Ljg2LS4wNTQiIGZpbGw9IiNmZmYiLz4KICA8cGF0aCBkPSJNOTcuNjIyIDMuNTg4VjEuMTU0aDIuMDh6bS00OS4yNDUgOS40MWwuMDkuMDgzYy4wMjQtLjAyNCAyLjMyNy0yLjUxMSA1Ljk4My00Ljk2NCAzLjM2Ny0yLjI1OSA4LjU5Mi00Ljk0NCAxNC4zODMtNC45MTIgNS43NzguMDI4IDExLjA3NyAyLjcyMiAxNC41MDYgNC45NzcgMy42NjUgMi40MSA2LjAyNyA0Ljg0IDYuMTMyIDQuOTVsLTIuNTE1IDIuOTQ1Yy00LjQ4OC42MTYtNy43MDIgMy45NDUtMTIuMDc3IDMuMjE3LTIuMjA1LS4zNjYtMi4yNzEtMS42MzItMi45MDItMi44OTMtLjQ4NC0uOTY5LTEuMjU2LS44NDYtMi4yNjMtMS4yNC0uOTM3LS4zNjYtMS40NzktMS4xMjgtMy4zNTEtLjY4OC0xLjY0Mi4zODUtMS44MjIgMi45MzMtMy44NjUgMi43ODctMS4wOTYtLjA3OS0xLjE3NS0xLjYyMS0yLjc1NS0zLjU5Ni00LjA5LTQuOTE1LTcuODkyLTQuMjM1LTEwLjU0Ny4zMDhsMTkuNjM4IDIzLjMzek00MC4wMTEgMS4xNTNWMy4wNmwtMS42MDQtMS45MDZ6bTUzLjg3NiAwaDMuMjI3djMuMDNMOTMuODg3IDcuOTZ6TTg5LjgzMiAxMi42MVYxLjE1NGgzLjU0NnY3LjQwNGwtMy41IDQuMDk4YS45NjYuOTY2IDAgMCAwLS4wNDYtLjA0Nm0tLjUwOC0xMC4zODl2OS44OTRhNDEuMDUxIDQxLjA1MSAwIDAgMC0zLjU1Ny0yLjk4NnptLTQuMTY1LS4zNTh2Ni44MTljLS40NjMtLjMzNC0uOTUtLjY3My0xLjQ2NS0xLjAxMi0uNjY0LS40MzgtMS40LS44OTItMi4xOTQtMS4zNHptLTQuMzEyLS4xMzN2NC4yNGEzMi44MyAzMi44MyAwIDAgMC0zLjEyLTEuNDc0em0uNTA4LS41NzZoMy43MjdsLTMuNzI3IDQuNTV6bTQuMzEyIDBIODkuM2wtMy42MzQgNy4wNnptLTguNzk3IDBoMy44Nkw3Ny4yIDQuMjgyYy0uMTA5LS4wNDItLjIyMS0uMDgxLS4zMzEtLjEyMlYxLjE1NHptLS41MDkuNDE3djIuNDAzYTI1LjkyNyAyNS45MjcgMCAwIDAtMy4xLS44ODd6bS00LjIwMy4wNDJ2MS4yNmEyMS40NTggMjEuNDU4IDAgMCAwLTIuMTc5LS4yNTJ6bS02Ljc2Ni0uMDM5bDIuMjQ4IDEuMDQyYy0uNzYyLjA0My0xLjUxMi4xMy0yLjI0OC4yNTN6bS00LjEyLS4wMDNsMy4wNjUgMS40OThjLTEuMDYuMjI5LTIuMDgzLjUyOC0zLjA2Ni44NzV6bTMuNjEgMS4ybC0zLjMwNC0xLjYxN2gzLjMwNXptMy41NjYtLjM0MmwtMi43NTQtMS4yNzVoMi43NTR6bS42MDktMS4yNzVoMi44ODFsLTIuODgxIDEuMzM0em0zLjc1OSAwaDMuMjRsLTMuMjQgMS41ODR6TTYwLjQwNSA0LjI2NWwtMy41MS0zLjExaDMuODY5VjQuMTNsLS4zNTkuMTM1bS0zLjYxOC0yLjUyN2wzLjA5MyAyLjc0MWEzMS40OTMgMzEuNDkzIDAgMCAwLTMuMDkzIDEuNDg5em0tNC4zMTIuMTI4bDMuNjQgNC40OGEzNS44OSAzNS44OSAwIDAgMC0zLjY0IDIuNDF6bS00LjE2NS4zNThsMy41ODYgNi45NzRhMzcuNzcyIDM3Ljc3MiAwIDAgMC0zLjU4NiAzLjE1MXptMy42NTYgNmwtMy42MzQtNy4wN2gzLjYzNHptNC4zMTItMi40ODVsLTMuNzI2LTQuNTg1aDMuNzI2ek00My43NDcgNy40OTdMNDAuNTIgMy42NjR2LTIuNTFoMy4yMjd6bS41MDgtNi4zNDNINDcuOHYxMS4xNmwtMy41NDYtNC4yMTJ6bTI0LjgtMS4xNTNIMzZ2MTQuNTgyTDY4LjgzNiA1NC41MmwuMjItLjI3NUwxMDIgMTUuMDRWMHoiIGZpbGw9IiM0OTEyMTMiLz4KICA8cGF0aCBkPSJNNjYuMjI3IDQ2LjAyNmwyLjYxLTQuMjIgMi41OTggNC4yMi0yLjU5OCA0LjIzeiIgZmlsbD0iIzIzYTllMSIvPgogIDxwYXRoIGQ9Ik03NC4yMTggMzAuNTU2Yy0zLjQzMy0yLjAyLTIuNTY0LTMuNTIzLjIzLTQuOTI1IDEuNDYyLS43MzQgNC43NTQtMy4zOCA2LjEzMy0yLjQ5OWwtNi4zNjMgNy40MjRtLTIuMzM0IDIuNTE3Yy0yLjA0Ni0uMDk1LTQuMzMtLjM2NS02LjI2Mi4wNTUgMS4yMDcuMzAyIDQuMTUxIDEuMTY1IDEuNDEgMS44OTQuOTgzIDEuNDA3IDIuNTc4IDEuMzE3IDMuNjI0LjA4Mi0uNDI1LS4yMDktLjY1NS0uNDY2LTEuMDA3LS42ODYgMS4wODUtLjE5NiAyLjEtLjgyMiAyLjIzNS0xLjM0NW0xLjIzNS0xLjU3NGMtLjkzMy0uNzk2LTEuODc3LS44NC0yLjc0NiAwLTEuMTY1LTIuMTM3LTUuNC0xLjQyMS03LjM3OS0xLjcyIDEuMDY1IDIuNjE0IDkuNjUgMy4xMDIgMTAuMTI0IDEuNzJtLTYuNzczLTIuMTUxYy0xLjU2NS0uNDg1LTYuODQtLjM2NC0zLjM4OC0xLjc5NCAxLjA2NS0uNDQxIDYuNTkzLjA2MyAzLjM4OCAxLjc5NG0xLjkxMi0zLjAzYy0uNDc3LTEuMDc3LjM2NS0yLjM2IDEuNzQtMS40MjggMS4xOTkuODEzLS41NTIgMi4wMTctMS43NCAxLjQyOG0tMi44MzYuMDkxYy0yLjI2NS42NzktNS4yNzMtLjc4NC0xLjYzLTEuNTIgMi4yNjEtLjQ1NiA0LjY2Ni41MDYgMS42MyAxLjUyLjA5MS0uMDI3LS4wODQuMDI4IDAgMG0tMi42NjUtNi4yMzRjLS41NDUgMS42MjQtMS41MzMgMS45MjctMS40MjMtLjA0NS4xMjYtMi4yNzQgMS42MDktMS43MjkgMy4yLTIuNiAxLjMyNC0uNzI2IDIuMDM4LTMuMzg1IDQuMzEtMS43OTUgMS4wMTQuNzEgMi4xNzYuMTE2IDIuNSAxLjE5LS4wMTYtLjA1NC0yLjk1IDYuNjkyLTEuMzE4IDYuNjkyLTMuMjIgMC0xLjgtMy44NDUtLjU2OC02LjQyNi0xLjE5OC41NzQtMy4xNDMgNC4zNDEtMS41NDYgNC45NjEtLjgzMSAxLjA5NS0zLjM3MiAyLjU2MS00LjY5NiAxLjQ5Mi0xLjAwNi0uODEtLjQ0Ny0yLjE1OC0uNDU5LTMuNDdtLTMuOTYzIDIuODExYy01LjU5Ni0uMDQ2LTEuODEzLTguNjQ4LjA5MS04LjEyOCAyLjE5LjY5NiAxLjk0NCA4LjE5NC0uMDkxIDguMTI4bS02LjE3LTguMTQ2Yy0yLjYyNC0uMTA5LTEuNTI2LTIuNTY3LjI1Ny0zLjEyMSAxLjY5NS0uNTI4IDUuMjUgMS4xMTQgNi4zOSAyLjIwNS0xLjgwOC41NTUtNC4xNDYuNDc2LTYuMTM0LjU2OC0uMTQ2LTIuMDI2LS42Mi0xLjMyLS41MTIuMzQ4IiBmaWxsPSIjZGM2MjQzIi8+CiAgPHBhdGggZD0iTTcxLjc3NCAyNS44MzJjLTIuOTA4LTIuOTg3IDQuMzQyLTIuNzEyIDUuNTEtMy43NjMuODUuMjg0IDYuOTktNS4zNzcgOC40ODUtNS4wMjUtMS4wNzQgMS4yNi0zLjM4OCA1LjI4Mi01LjA0NyA1LjI4Mi0xLjI3NSAwLTIuNTY1LS4xOS0zLjU1Mi43MTgtMS40NDQgMS4zMy0zLjgzNyAyLjAwNi01LjM5NiAyLjc4OCIgZmlsbD0iI2Y0OTc3NCIvPgogIDxwYXRoIGQ9Ik03Mi43MjcgMjIuMThjLTEuNTkyLjg1Ni0zLjA5OC0yLjUzNi0uMzQ5LTIuMjA2IDEuODI2LjIyIDMuNjc2LS4xNTQgNS40Mi4xNDctMS4yNTEgMS40ODctMy4wNTYgMi4zMDYtNS4wNzEgMi4wNTkiIGZpbGw9IiNmNGIxYTQiLz4KICA8cGF0aCBkPSJNNTEuMTEzIDIwLjkzNWMuMzMzLjQwMS41NzguODM0LjUyMyAxLjM3NC0uMDM4LjM3NS0uNjA3IDEuMDA2LS4xNzUgMS4xOThsMS40NTUtMS44NGMtLjM5LS4wOTgtMy40ODItMy43OTYtMy41MzItNC4yMDFsLTIuMDUxIDEuMTI2Yy4xMDYuNDI5Ljg0LjAwMyAxLjIwMy4wMy41MzguMDM4LjkyNi4zNjMgMS4yNjguNzQ3LTEuMTIuOTQtMy44NSAzLjI1Ny00LjEzOCAzLjMwNS0uMTQ2LjAyMy0uNzA2LS4zOS0uNzE0LS4wMzctLjAwNC4xNy41NTMuNjU5LjY1OS43ODZsMS40NDcgMS43MjJjLjQwMS0uMTgzLS4wNzItLjQ3NS4xMzMtLjgwNy4xNS0uMjQzIDMuMTgxLTIuNzcgMy45MjItMy40MDNtLTMuNDIzLTQuNTMxYy4yODctLjA2Mi40MDUuMjgyLjYyMi0uMDM2bC0xLjU5LTEuODk0Yy0uMjQxLS4yODctLjU0Ni0uNTk1LS40NTkuMDEyLjA1OC40MDktMy45NjkgMy42NzctNC4yMTUgMy43NzgtLjMxLjEyOC0uNDkyLS4yNy0uNzIuMDYzLjQ3NS41NjQuOTQ4IDEuMTI5IDEuNDI0IDEuNjkzLjE2LjE5LjMwOS4zOTcuNDg1LjU3My4yMi4yMi4xMzUtLjQzNy4xNDUtLjM4LS4wNi0uMzMzLjM0Mi0uNjE2LjU1NS0uNzk3IDEuMDA0LS44ODQgMy41MDUtMi45NzkgMy43NTMtMy4wMTJtLTUuNjk0LS41OTVjLTEuMTQ3LjM0LTIuMzctLjEwNy0yLjczMS0xLjMyNi0uMzUzLTEuMTkxLjM5OC0yLjQzOSAxLjM0NC0zLjExNy45MzUtLjY3IDIuMzMtLjYzIDIuODQuNTQ0LjIyNC41Mi4xMDIgMS4xMDgtLjA2MSAxLjYyNS0uMTA1LjMyOC0uMzg4LjY0OS4wMzUuODM2LjU2LS43MTEgMS4xMTgtMS40MjEgMS42NzYtMi4xMzMtLjY4NC0uNDEtLjk4NS0xLjA5Mi0xLjQ5My0xLjY4NC0uNTcyLS42OTYtMS4zNC0xLjM1LTIuMjYtMS40ODMtMS44NjQtLjI2NC0zLjYyIDEuNjYtMy43NjIgMy40MDUtLjA4OS45NDYuMjQyIDEuODQ5LjgwOCAyLjU5Ny40ODcuNjQ1IDEuMjEzIDEuMDU0IDEuNTgxIDEuNzg4LjE3LjA2MiAxLjc1Ni0uNjcgMi4xMzMtLjgxNS0uMDMzLS4wNzItLjA1Ny0uMTc4LS4xMS0uMjM3LS40OTQuMTQ2IDAgMCAwIDBtMjUuNTEyIDIzLjYzNmMtLjc0Ny0uNDk5LTIuNjEzLTMuMDQ0LTIuOTY5LTMuNDY4bC0uMjEzLS4yNTNjLS4wMDctLjAxLS4xODUuMTQ1LS4xNi4xMjQtLjExMi4wOTQuMDg2LjM3Mi0uMDM0LjU2LS41MTUuODA2LTMuNzM4IDMuMjM2LTMuOTA1IDMuMzUyLS4zNi4yNS0uNzU2LS4xMDMtLjk2Ny4yMDYuNDY3LjU1NCAxLjgwNSAyLjMgMS45NiAyLjMyNS4zMTEuMDUuMDk2LS41My4xMzYtLjY0OS4wOC0uMjQgMS43MS0xLjU4OCAyLjMwNC0yLjA4NC4yMTgtLjE4My40NDcuMjc2LjU3Ny40NjguMjEyLjMxNS4zMDcuNjUuMTkzIDEuMDE5LS4wNzUuMjQtLjQ2NS41OTctLjE2Mi43NjIuNDAyLS40NyAxLjUzMy0xLjc4OCAxLjY5Ni0xLjk4LjE2NC0uMTktLjM2Ny0uMDIzLS4zMDQtLjA1Ni0uMjQuMTI0LS40NjYuMTUzLS42OS0uMDE4LS4wNjMtLjA0Ny0uNzA3LS43MDItLjY0My0uNzU3LjI4LS4yMzUuNjIzLS42MjUuOTg0LS43MTQuNTYtLjEzOCAxLjAyNy45ODQgMS4xMSAxLjM4Mi4wNzguMzc1LjA2Ny43Ny0uMDUgMS4xMzYtLjA4LjI1MS0uMzE2LjQ1Mi4wMTIuNjA0bDEuMzgzLTEuODk2YS40NjMuNDYzIDAgMCAxLS4yNTgtLjA2M2MtLjA4My0uMDU2LjA5LjA0NSAwIDBtLTkuMjI3LTguOTIxYTMuMzUgMy4zNSAwIDAgMC0xLjk3Ny43OTNjLTEuNDMgMS4yMDMtMS42MTYgMy4yNzUtLjQ5MiA0Ljc1MyAxLjI5MiAxLjcwMiAzLjM3NCAxLjg5NSA1LjA1OS42OTQgMS40My0xLjIwNSAxLjYxMi0zLjI4Mi41LTQuNzY2LS43NTgtMS4wMS0xLjkzMi0xLjU0LTMuMDktMS40NzR6bTEuMTkgMS4zODZjLjk0OS0uMTA4IDEuNTAzLjc5OSAxLjA5OSAxLjc2OC0uNDIuOTgtMS40MyAxLjk4OS0yLjQyNCAyLjM4LTEuMTguNDY1LTIuMDExLS41MzctMS41MzEtMS42NTcuNDIyLS45ODQgMS40My0xLjk4MyAyLjQyNi0yLjM4LjE1LS4wNTkuMjk0LS4wOTUuNDMtLjExem0tMi43ODMtNC42M2MuMzA4LjAzOC42MDEuMzU2LjgyNC4wMjdsLTEuNDQ3LTEuNzEyYy0uMzg2LjE3NC4wMy4zNTYtLjEyNi42My0uMTU4LjI3Ny0xLjY2Mi41MDctMi4wNjIuNTc4LjE0Ni0uNDE4LjU4LTEuNjk4Ljc1Mi0xLjg0LjM1My0uMjkuNTczLjI4LjgzMi0uMDkybC0xLjc4LTIuMTEyYy0uMi0uMjM4LS4zNjItLjY2Ny0uNjM2LS40NDEuMDI0LS4wMi4wMDMuOTU1LS4wNTggMS4xMjUtLjA1Ni4xNTMtLjYwOCAyLjM2MS0xLjI1IDIuOTAxLS4zMi4yNy0xLjQ1MyAxLjI1Ni0xLjc1NSAxLjM2Mi0uMzUuMTIyLS41MzUtLjM4OS0uNzkyLS4wMjVsMS42MTcgMS45MmMuMDgyLjA5Ni4zOTEuNTYuNDk4LjU4LjMzOS4wNi4wNC0uNTguMDc0LS43MDYuMDk4LS4yOCAxLjYyMy0xLjc2NSAyLjI3LTEuODU2Ljk0OC0uMTMzIDIuMDc3LS40NTUgMy4wMzktLjM0LjIyLjAyNy0uMjI5LS4wMjggMCAwbTI0LjIzOSA2Ljc3Yy4xMjQuNDIxLjE5NC44NjUuMTQgMS4zMDUtLjA3LjU2Ni0uNjM2IDEuODk4LTEuNDExIDEuNTE5LS43Ni0uMzczLTEuNDI1LTEuMTIyLTIuMDctMS42NTcuNTItLjYwOC45NzgtMS4xMzUgMS44NTMtLjg0LjI0LjA4LjQ0Ni0uMDI0LjE5NC0uMTctLjI2My0uMTUzLTIuMDIyLTEuMjc2LTIuMTE3LTEuMTY5LS4xNzUuMjAyLjM0My41NjQuMTQzLjk1Ny0uMTQ4LjI5LS4zOTYuNTQtLjYwNS43OS0uNDY3LS4zOTQtMS4yNDgtLjgxMy0uNjg1LTEuNDY0LjM1Mi0uNDI4LjgxMS0uNzYgMS4zNjEtLjg3LjM2OC0uMDc1IDEuMTk1LjI1MiAxLjMwMi0uMTQ2LS43MDUtLjM0LTEuNDEtLjY3Ny0yLjExNS0xLjAxNi4xMTUuNTItMi4xNzMgMi45MzctMi42ODEgMy41NDgtLjA3NC4wODgtLjQyNy4zOTUtLjQzMS41MTctLjAwNi4yNzguNDAzLjA2Mi40MjcuMDU0LjMxNS0uMTE2IDQuNDI0IDMuMzE3IDQuNTI2IDMuNTUyLjA2NS4xODItLjE0NC4zNzMtLjAyLjQ3NS0uMDA2LS4wMDYuMTQ4LjE0LjE2NS4xMi4yNTMtLjMwNCAyLjkzNi0zLjg4IDMuNDg5LTQuMDM2YTIzOS42NjQgMjM5LjY2NCAwIDAgMS0xLjUzNy0yLjM3MmMtLjM4My4xNjgtLjAxMy42MTYuMDcyLjkwM20tNCA0LjM1MmMtMS4zNDgtLjg3LTMuNjMzLjgzLTMuOTc2Ljk5NC0uNjc1LjMxOS0xLjE2Mi0uMzUzLS44MTItLjk3NS4zMDQtLjU0LjkwNC0uODAxIDEuNS0uODM3LjE4LS4wMS44NzUuMTI4Ljk0Ni4wMTcuMDg0LS4xMzEuMTQ4LS4xNDIuMDI4LS4yMjQtLjU1Ny0uMzc1LTEuMTEyLS43NS0xLjY2Ny0xLjEyNi0uMTE1LjY4NS0uOSAxLjEyMS0xLjM0OCAxLjU4NS0uNTM0LjU1NS0uOTg3IDEuMjUzLS45ODcgMi4wNSAwIC43MzYuNDQxIDEuMzkgMS4wODkgMS43MjYuNzM3LjM4NCAxLjUwNS4wNzYgMi4xNTgtLjMzMS40MDctLjI1NS44MTQtLjU1NiAxLjI0OS0uNzYuNjQ2LS4zMDMgMS40OTUtLjA0MSAxLjI2Ny44MjQtLjE4My42OTYtLjg3NiAxLjMzNy0xLjU2IDEuNTE5LS40LjEwNi0uODI1LjA3LTEuMjE2LS4wNTktLjI4LS4wOTEtLjY0NS0uNDc2LS43OTktLjA3MmwyLjI2IDEuNjQ3Yy4wNjgtLjQ5My4zNC0uNzA4LjcwNi0xLjAxNS40NzctLjQxOS45MzMtLjg1OCAxLjI5NC0xLjM4My43NTMtMS4xIDEtMi42MzgtLjEzMi0zLjU4bTE3LjYxNy0yOC4wNjVhLjIyMi4yMjIgMCAwIDAtLjA4OC4wNzJsLS43OS45NS0uODE0Ljk4MmMtLjE2OC4yMDQtLjM0OS4yOTYtLjAyNS40NjcuNTQzLS4yNzIgMy41MTggNC43NjggMy4yNTIgNS40OTItLjQ3LjI0NC00LjQ5LTMuMjgzLTQuNTk4LTMuNTE2LS4wMzMtLjA5NS4xNzgtLjY2Mi0uMTM2LS42MTMtLjE0OS4wMjMtLjQ4NC41ODMtLjU3OC42OTdsLS41NzcuNjk1Yy4yMTYuMzE1LjMzNi0uMDEzLjYyMy4wMjguMjQ5LjA1IDEuMTk4Ljg2NCAxLjQ1NiAxLjA4LS40Ny4wMTctMS43NDMuMDg2LTEuOTA1LjA3NC0uNTg2LjA3My0uMjc1LS40MzEtLjY2LS42MDVsLTEuNDc4IDEuNzk1LS44NiAxLjA0M2MtLjAzNS4wNDItLjAzLjAyLjAzMS4wNzIuMjE1LjE3Ny4wNjguMTA5LjM3LjAwNC4zMjgtLjExNSA0LjI1NiAzLjIgNC4zOTggMy4zNjkuMjQ1LjI5Mi0uMS42MzMuMjY4Ljc5M2wxLjE2OC0xLjQxOGMuMDU5LS4wNzIuMDkxLS4wNjYuMDEzLS4xMy0uMjc3LS4yMjgtLjMwOS4xMzgtLjY1LjEtLjM0Ni0uMDU3LTIuODU1LTIuMTg2LTMuODI4LTIuOTkybDUuMzIyLS4xOTdjLjE5NS0uMDA3Ljc0LjU4MS42OTUuNzktLjA1Mi4yNDQtLjMwMS4zNjEuMDM0LjUxNS4zMTEtLjM3NC42NC0uNzQ2Ljk0NS0xLjEyNWwuMTQ4LS4xODRhLjQ3OC40NzggMCAwIDAgLjEzNS0uMTcybC4xMS0uMTM3Yy4yNzUtLjMxNCAxLjE2OS0xLjMwMyAxLjA2Mi0xLjM5Ni0uMy0uMjYtLjQ0Ni4zMDItLjg0NC0uMDM1LS4yMjYtLjE2Mi0uNzkzLTEuMTYtLjkzNS0xLjQwMi0uMTcyLS4yOTIuMzk0LS41ODMuNjI1LS43MjcuNTA0LS4zMTMgMi4xMDctLjc2NyAyLjI2LjIyNy4wMjUuMTY3LS4xNzcuMzU3LS4wNTUuNDU3LjAyOC4wMjQuMTMzLjE1Ni4xNzYuMTA1bDIuMTQyLTIuNTc2Yy0uMDYzLS4wNTMtLjEzNS0uMTQ3LS4yMS0uMTc2LS40NzQuNDczLTUuNDY2LTEuNTItNS44My0xLjc5NS0uMTY2LS4wNjYtLjE5Mi0uNjczLS4zNzItLjYxMXptLS4yMjUgMi41NTNjLjc2NC4zMTggMS41MjYuNjM4IDIuMjg3Ljk2LS4yMy4wNjQtLjQ0Ny4xNjYtLjY0OC4yOTNoLS4wMDJhMy43MSAzLjcxIDAgMCAwLS42MjEuNDk1bC0xLjAxNi0xLjc0OHptLTYuNTg4IDcuNzUzYy0xLjEwNy0uMDc2LTIuMjMuNDEtMy4wMjMgMS4zMTctMS4yMzUgMS41LTEuMTEyIDMuNjc4LjM5MyA0Ljk0NSAxLjUxOCAxLjI1IDMuNjguOTMyIDQuOTE2LS41NSAxLjIzMi0xLjQ5NiAxLjE0Ny0zLjY4LS4zODUtNC45MzRhMy4zMDIgMy4zMDIgMCAwIDAtMS45LS43Nzh6bS0xLjQ0OSAxLjU1OWMuNjIyLjAzOCAxLjMxLjQxNCAxLjc0Mi43MDMuNzguNTIxIDIuMjE0IDEuNjg3IDEuNDc3IDIuNzM4LjA0OC0uMDU4LjA4My0uMDk3LS4wNS4wN2EuMTYyLjE2MiAwIDAgMS0uMDE4LjAxOGMtLjguODQtMi4xOC4wNjMtMi45MjQtLjQ3NC0uNzQ1LS41MzgtMi4wMjItMS42NjgtMS4yMDctMi42NjQuMjU3LS4zMTQuNjA3LS40MTQuOTgtLjM5MXptLTMuMTI3IDQuMjhjLTEuMjE0LS4wNjctMi40MDMuNDk2LTMuMjk5IDEuNTc2LS42NDIuNzcxLTEuMjgyIDEuNTQ0LTEuOTIyIDIuMzE2LjIyOC4zMzIuNDk1LS4wNzguODI3LjExMy4yODMuMTYzIDQuMDUzIDMuMzEyIDQuMTE1IDMuNDg1LjEwNi4yOTctLjE2NS4zNTYuMDk0LjU2OC4xMTEuMDkzIDIuOTQ0LTMuNDA1IDMuMjAzLTQuMDIuNDQ4LTEuMTM5LjA5MS0yLjM4Ny0uODItMy4xNzUuMDczLjA2LjE3Ny4xNDUtLjA0Mi0uMDM3LS42OS0uNTE4LTEuNDI3LS43ODctMi4xNTYtLjgyN3ptLTEuMDUzIDEuNThjLjA5NS4wMDMuMTg0LjAxNi4yNjYuMDM3IDEuNDIyLjM2MyAzLjM4NCAyLjExNSAyLjEyOSAzLjYyOC0uMTU2LjE5My0uMDI5LjAzNS0uNDMyLjQyMi0uMTk4LjE5LTQuMTc5LTMuMDM0LTQuMDItMy4yMDkuNDc1LS41MjEgMS4zOTYtLjkwNCAyLjA1Ny0uODc5eiIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K" width="140" height="71" alt="Логотип">
-      </a>
+        <a class="main-header-logo" href="index.html">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTM4IDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0xMzggMEgwbDU5LjUxIDY1LjY4YzUuMjIgNS43NjEgMTMuNzYgNS43NjEgMTguOTggMHoiIGZpbGw9IiM4MWIzZDMiLz4KICA8cGF0aCBkPSJNMzYuNjg3LjQ1N2wzMi4xNDggMzcuODc5IDMyLjAyLTM3LjY1eiIgZmlsbD0iIzIzYTllMSIvPgogIDxwYXRoIGQ9Ik02MS4xIDE0LjcxOWgxNy4zMmMtMS4yOS0uOC00LjM1NS00LjU4Mi02LjA0My0zLjE3Ni0uMTM3LjExNS00Ljg3MS01Ljc0NC03Ljk4Mi0yLjkyMS0yLjcxMyAyLjQ2Ni0zLjk3My0uMzIzLTcuMDQ4IDEuNjMtMy41MDUgMi4zMTggMi4wMjYgMy42ODQgMy43NTMgNC40NjdtMjYuNzMtMy40NzhsLTkuODYuMDU0YzMuODk2LTQuNSA1LjY0Ny00LjAxOCA5Ljg2LS4wNTQiIGZpbGw9IiNmZmYiLz4KICA8cGF0aCBkPSJNOTcuNjIyIDMuNTg4VjEuMTU0aDIuMDh6bS00OS4yNDUgOS40MWwuMDkuMDgzYy4wMjQtLjAyNCAyLjMyNy0yLjUxMSA1Ljk4My00Ljk2NCAzLjM2Ny0yLjI1OSA4LjU5Mi00Ljk0NCAxNC4zODMtNC45MTIgNS43NzguMDI4IDExLjA3NyAyLjcyMiAxNC41MDYgNC45NzcgMy42NjUgMi40MSA2LjAyNyA0Ljg0IDYuMTMyIDQuOTVsLTIuNTE1IDIuOTQ1Yy00LjQ4OC42MTYtNy43MDIgMy45NDUtMTIuMDc3IDMuMjE3LTIuMjA1LS4zNjYtMi4yNzEtMS42MzItMi45MDItMi44OTMtLjQ4NC0uOTY5LTEuMjU2LS44NDYtMi4yNjMtMS4yNC0uOTM3LS4zNjYtMS40NzktMS4xMjgtMy4zNTEtLjY4OC0xLjY0Mi4zODUtMS44MjIgMi45MzMtMy44NjUgMi43ODctMS4wOTYtLjA3OS0xLjE3NS0xLjYyMS0yLjc1NS0zLjU5Ni00LjA5LTQuOTE1LTcuODkyLTQuMjM1LTEwLjU0Ny4zMDhsMTkuNjM4IDIzLjMzek00MC4wMTEgMS4xNTNWMy4wNmwtMS42MDQtMS45MDZ6bTUzLjg3NiAwaDMuMjI3djMuMDNMOTMuODg3IDcuOTZ6TTg5LjgzMiAxMi42MVYxLjE1NGgzLjU0NnY3LjQwNGwtMy41IDQuMDk4YS45NjYuOTY2IDAgMCAwLS4wNDYtLjA0Nm0tLjUwOC0xMC4zODl2OS44OTRhNDEuMDUxIDQxLjA1MSAwIDAgMC0zLjU1Ny0yLjk4NnptLTQuMTY1LS4zNTh2Ni44MTljLS40NjMtLjMzNC0uOTUtLjY3My0xLjQ2NS0xLjAxMi0uNjY0LS40MzgtMS40LS44OTItMi4xOTQtMS4zNHptLTQuMzEyLS4xMzN2NC4yNGEzMi44MyAzMi44MyAwIDAgMC0zLjEyLTEuNDc0em0uNTA4LS41NzZoMy43MjdsLTMuNzI3IDQuNTV6bTQuMzEyIDBIODkuM2wtMy42MzQgNy4wNnptLTguNzk3IDBoMy44Nkw3Ny4yIDQuMjgyYy0uMTA5LS4wNDItLjIyMS0uMDgxLS4zMzEtLjEyMlYxLjE1NHptLS41MDkuNDE3djIuNDAzYTI1LjkyNyAyNS45MjcgMCAwIDAtMy4xLS44ODd6bS00LjIwMy4wNDJ2MS4yNmEyMS40NTggMjEuNDU4IDAgMCAwLTIuMTc5LS4yNTJ6bS02Ljc2Ni0uMDM5bDIuMjQ4IDEuMDQyYy0uNzYyLjA0My0xLjUxMi4xMy0yLjI0OC4yNTN6bS00LjEyLS4wMDNsMy4wNjUgMS40OThjLTEuMDYuMjI5LTIuMDgzLjUyOC0zLjA2Ni44NzV6bTMuNjEgMS4ybC0zLjMwNC0xLjYxN2gzLjMwNXptMy41NjYtLjM0MmwtMi43NTQtMS4yNzVoMi43NTR6bS42MDktMS4yNzVoMi44ODFsLTIuODgxIDEuMzM0em0zLjc1OSAwaDMuMjRsLTMuMjQgMS41ODR6TTYwLjQwNSA0LjI2NWwtMy41MS0zLjExaDMuODY5VjQuMTNsLS4zNTkuMTM1bS0zLjYxOC0yLjUyN2wzLjA5MyAyLjc0MWEzMS40OTMgMzEuNDkzIDAgMCAwLTMuMDkzIDEuNDg5em0tNC4zMTIuMTI4bDMuNjQgNC40OGEzNS44OSAzNS44OSAwIDAgMC0zLjY0IDIuNDF6bS00LjE2NS4zNThsMy41ODYgNi45NzRhMzcuNzcyIDM3Ljc3MiAwIDAgMC0zLjU4NiAzLjE1MXptMy42NTYgNmwtMy42MzQtNy4wN2gzLjYzNHptNC4zMTItMi40ODVsLTMuNzI2LTQuNTg1aDMuNzI2ek00My43NDcgNy40OTdMNDAuNTIgMy42NjR2LTIuNTFoMy4yMjd6bS41MDgtNi4zNDNINDcuOHYxMS4xNmwtMy41NDYtNC4yMTJ6bTI0LjgtMS4xNTNIMzZ2MTQuNTgyTDY4LjgzNiA1NC41MmwuMjItLjI3NUwxMDIgMTUuMDRWMHoiIGZpbGw9IiM0OTEyMTMiLz4KICA8cGF0aCBkPSJNNjYuMjI3IDQ2LjAyNmwyLjYxLTQuMjIgMi41OTggNC4yMi0yLjU5OCA0LjIzeiIgZmlsbD0iIzIzYTllMSIvPgogIDxwYXRoIGQ9Ik03NC4yMTggMzAuNTU2Yy0zLjQzMy0yLjAyLTIuNTY0LTMuNTIzLjIzLTQuOTI1IDEuNDYyLS43MzQgNC43NTQtMy4zOCA2LjEzMy0yLjQ5OWwtNi4zNjMgNy40MjRtLTIuMzM0IDIuNTE3Yy0yLjA0Ni0uMDk1LTQuMzMtLjM2NS02LjI2Mi4wNTUgMS4yMDcuMzAyIDQuMTUxIDEuMTY1IDEuNDEgMS44OTQuOTgzIDEuNDA3IDIuNTc4IDEuMzE3IDMuNjI0LjA4Mi0uNDI1LS4yMDktLjY1NS0uNDY2LTEuMDA3LS42ODYgMS4wODUtLjE5NiAyLjEtLjgyMiAyLjIzNS0xLjM0NW0xLjIzNS0xLjU3NGMtLjkzMy0uNzk2LTEuODc3LS44NC0yLjc0NiAwLTEuMTY1LTIuMTM3LTUuNC0xLjQyMS03LjM3OS0xLjcyIDEuMDY1IDIuNjE0IDkuNjUgMy4xMDIgMTAuMTI0IDEuNzJtLTYuNzczLTIuMTUxYy0xLjU2NS0uNDg1LTYuODQtLjM2NC0zLjM4OC0xLjc5NCAxLjA2NS0uNDQxIDYuNTkzLjA2MyAzLjM4OCAxLjc5NG0xLjkxMi0zLjAzYy0uNDc3LTEuMDc3LjM2NS0yLjM2IDEuNzQtMS40MjggMS4xOTkuODEzLS41NTIgMi4wMTctMS43NCAxLjQyOG0tMi44MzYuMDkxYy0yLjI2NS42NzktNS4yNzMtLjc4NC0xLjYzLTEuNTIgMi4yNjEtLjQ1NiA0LjY2Ni41MDYgMS42MyAxLjUyLjA5MS0uMDI3LS4wODQuMDI4IDAgMG0tMi42NjUtNi4yMzRjLS41NDUgMS42MjQtMS41MzMgMS45MjctMS40MjMtLjA0NS4xMjYtMi4yNzQgMS42MDktMS43MjkgMy4yLTIuNiAxLjMyNC0uNzI2IDIuMDM4LTMuMzg1IDQuMzEtMS43OTUgMS4wMTQuNzEgMi4xNzYuMTE2IDIuNSAxLjE5LS4wMTYtLjA1NC0yLjk1IDYuNjkyLTEuMzE4IDYuNjkyLTMuMjIgMC0xLjgtMy44NDUtLjU2OC02LjQyNi0xLjE5OC41NzQtMy4xNDMgNC4zNDEtMS41NDYgNC45NjEtLjgzMSAxLjA5NS0zLjM3MiAyLjU2MS00LjY5NiAxLjQ5Mi0xLjAwNi0uODEtLjQ0Ny0yLjE1OC0uNDU5LTMuNDdtLTMuOTYzIDIuODExYy01LjU5Ni0uMDQ2LTEuODEzLTguNjQ4LjA5MS04LjEyOCAyLjE5LjY5NiAxLjk0NCA4LjE5NC0uMDkxIDguMTI4bS02LjE3LTguMTQ2Yy0yLjYyNC0uMTA5LTEuNTI2LTIuNTY3LjI1Ny0zLjEyMSAxLjY5NS0uNTI4IDUuMjUgMS4xMTQgNi4zOSAyLjIwNS0xLjgwOC41NTUtNC4xNDYuNDc2LTYuMTM0LjU2OC0uMTQ2LTIuMDI2LS42Mi0xLjMyLS41MTIuMzQ4IiBmaWxsPSIjZGM2MjQzIi8+CiAgPHBhdGggZD0iTTcxLjc3NCAyNS44MzJjLTIuOTA4LTIuOTg3IDQuMzQyLTIuNzEyIDUuNTEtMy43NjMuODUuMjg0IDYuOTktNS4zNzcgOC40ODUtNS4wMjUtMS4wNzQgMS4yNi0zLjM4OCA1LjI4Mi01LjA0NyA1LjI4Mi0xLjI3NSAwLTIuNTY1LS4xOS0zLjU1Mi43MTgtMS40NDQgMS4zMy0zLjgzNyAyLjAwNi01LjM5NiAyLjc4OCIgZmlsbD0iI2Y0OTc3NCIvPgogIDxwYXRoIGQ9Ik03Mi43MjcgMjIuMThjLTEuNTkyLjg1Ni0zLjA5OC0yLjUzNi0uMzQ5LTIuMjA2IDEuODI2LjIyIDMuNjc2LS4xNTQgNS40Mi4xNDctMS4yNTEgMS40ODctMy4wNTYgMi4zMDYtNS4wNzEgMi4wNTkiIGZpbGw9IiNmNGIxYTQiLz4KICA8cGF0aCBkPSJNNTEuMTEzIDIwLjkzNWMuMzMzLjQwMS41NzguODM0LjUyMyAxLjM3NC0uMDM4LjM3NS0uNjA3IDEuMDA2LS4xNzUgMS4xOThsMS40NTUtMS44NGMtLjM5LS4wOTgtMy40ODItMy43OTYtMy41MzItNC4yMDFsLTIuMDUxIDEuMTI2Yy4xMDYuNDI5Ljg0LjAwMyAxLjIwMy4wMy41MzguMDM4LjkyNi4zNjMgMS4yNjguNzQ3LTEuMTIuOTQtMy44NSAzLjI1Ny00LjEzOCAzLjMwNS0uMTQ2LjAyMy0uNzA2LS4zOS0uNzE0LS4wMzctLjAwNC4xNy41NTMuNjU5LjY1OS43ODZsMS40NDcgMS43MjJjLjQwMS0uMTgzLS4wNzItLjQ3NS4xMzMtLjgwNy4xNS0uMjQzIDMuMTgxLTIuNzcgMy45MjItMy40MDNtLTMuNDIzLTQuNTMxYy4yODctLjA2Mi40MDUuMjgyLjYyMi0uMDM2bC0xLjU5LTEuODk0Yy0uMjQxLS4yODctLjU0Ni0uNTk1LS40NTkuMDEyLjA1OC40MDktMy45NjkgMy42NzctNC4yMTUgMy43NzgtLjMxLjEyOC0uNDkyLS4yNy0uNzIuMDYzLjQ3NS41NjQuOTQ4IDEuMTI5IDEuNDI0IDEuNjkzLjE2LjE5LjMwOS4zOTcuNDg1LjU3My4yMi4yMi4xMzUtLjQzNy4xNDUtLjM4LS4wNi0uMzMzLjM0Mi0uNjE2LjU1NS0uNzk3IDEuMDA0LS44ODQgMy41MDUtMi45NzkgMy43NTMtMy4wMTJtLTUuNjk0LS41OTVjLTEuMTQ3LjM0LTIuMzctLjEwNy0yLjczMS0xLjMyNi0uMzUzLTEuMTkxLjM5OC0yLjQzOSAxLjM0NC0zLjExNy45MzUtLjY3IDIuMzMtLjYzIDIuODQuNTQ0LjIyNC41Mi4xMDIgMS4xMDgtLjA2MSAxLjYyNS0uMTA1LjMyOC0uMzg4LjY0OS4wMzUuODM2LjU2LS43MTEgMS4xMTgtMS40MjEgMS42NzYtMi4xMzMtLjY4NC0uNDEtLjk4NS0xLjA5Mi0xLjQ5My0xLjY4NC0uNTcyLS42OTYtMS4zNC0xLjM1LTIuMjYtMS40ODMtMS44NjQtLjI2NC0zLjYyIDEuNjYtMy43NjIgMy40MDUtLjA4OS45NDYuMjQyIDEuODQ5LjgwOCAyLjU5Ny40ODcuNjQ1IDEuMjEzIDEuMDU0IDEuNTgxIDEuNzg4LjE3LjA2MiAxLjc1Ni0uNjcgMi4xMzMtLjgxNS0uMDMzLS4wNzItLjA1Ny0uMTc4LS4xMS0uMjM3LS40OTQuMTQ2IDAgMCAwIDBtMjUuNTEyIDIzLjYzNmMtLjc0Ny0uNDk5LTIuNjEzLTMuMDQ0LTIuOTY5LTMuNDY4bC0uMjEzLS4yNTNjLS4wMDctLjAxLS4xODUuMTQ1LS4xNi4xMjQtLjExMi4wOTQuMDg2LjM3Mi0uMDM0LjU2LS41MTUuODA2LTMuNzM4IDMuMjM2LTMuOTA1IDMuMzUyLS4zNi4yNS0uNzU2LS4xMDMtLjk2Ny4yMDYuNDY3LjU1NCAxLjgwNSAyLjMgMS45NiAyLjMyNS4zMTEuMDUuMDk2LS41My4xMzYtLjY0OS4wOC0uMjQgMS43MS0xLjU4OCAyLjMwNC0yLjA4NC4yMTgtLjE4My40NDcuMjc2LjU3Ny40NjguMjEyLjMxNS4zMDcuNjUuMTkzIDEuMDE5LS4wNzUuMjQtLjQ2NS41OTctLjE2Mi43NjIuNDAyLS40NyAxLjUzMy0xLjc4OCAxLjY5Ni0xLjk4LjE2NC0uMTktLjM2Ny0uMDIzLS4zMDQtLjA1Ni0uMjQuMTI0LS40NjYuMTUzLS42OS0uMDE4LS4wNjMtLjA0Ny0uNzA3LS43MDItLjY0My0uNzU3LjI4LS4yMzUuNjIzLS42MjUuOTg0LS43MTQuNTYtLjEzOCAxLjAyNy45ODQgMS4xMSAxLjM4Mi4wNzguMzc1LjA2Ny43Ny0uMDUgMS4xMzYtLjA4LjI1MS0uMzE2LjQ1Mi4wMTIuNjA0bDEuMzgzLTEuODk2YS40NjMuNDYzIDAgMCAxLS4yNTgtLjA2M2MtLjA4My0uMDU2LjA5LjA0NSAwIDBtLTkuMjI3LTguOTIxYTMuMzUgMy4zNSAwIDAgMC0xLjk3Ny43OTNjLTEuNDMgMS4yMDMtMS42MTYgMy4yNzUtLjQ5MiA0Ljc1MyAxLjI5MiAxLjcwMiAzLjM3NCAxLjg5NSA1LjA1OS42OTQgMS40My0xLjIwNSAxLjYxMi0zLjI4Mi41LTQuNzY2LS43NTgtMS4wMS0xLjkzMi0xLjU0LTMuMDktMS40NzR6bTEuMTkgMS4zODZjLjk0OS0uMTA4IDEuNTAzLjc5OSAxLjA5OSAxLjc2OC0uNDIuOTgtMS40MyAxLjk4OS0yLjQyNCAyLjM4LTEuMTguNDY1LTIuMDExLS41MzctMS41MzEtMS42NTcuNDIyLS45ODQgMS40My0xLjk4MyAyLjQyNi0yLjM4LjE1LS4wNTkuMjk0LS4wOTUuNDMtLjExem0tMi43ODMtNC42M2MuMzA4LjAzOC42MDEuMzU2LjgyNC4wMjdsLTEuNDQ3LTEuNzEyYy0uMzg2LjE3NC4wMy4zNTYtLjEyNi42My0uMTU4LjI3Ny0xLjY2Mi41MDctMi4wNjIuNTc4LjE0Ni0uNDE4LjU4LTEuNjk4Ljc1Mi0xLjg0LjM1My0uMjkuNTczLjI4LjgzMi0uMDkybC0xLjc4LTIuMTEyYy0uMi0uMjM4LS4zNjItLjY2Ny0uNjM2LS40NDEuMDI0LS4wMi4wMDMuOTU1LS4wNTggMS4xMjUtLjA1Ni4xNTMtLjYwOCAyLjM2MS0xLjI1IDIuOTAxLS4zMi4yNy0xLjQ1MyAxLjI1Ni0xLjc1NSAxLjM2Mi0uMzUuMTIyLS41MzUtLjM4OS0uNzkyLS4wMjVsMS42MTcgMS45MmMuMDgyLjA5Ni4zOTEuNTYuNDk4LjU4LjMzOS4wNi4wNC0uNTguMDc0LS43MDYuMDk4LS4yOCAxLjYyMy0xLjc2NSAyLjI3LTEuODU2Ljk0OC0uMTMzIDIuMDc3LS40NTUgMy4wMzktLjM0LjIyLjAyNy0uMjI5LS4wMjggMCAwbTI0LjIzOSA2Ljc3Yy4xMjQuNDIxLjE5NC44NjUuMTQgMS4zMDUtLjA3LjU2Ni0uNjM2IDEuODk4LTEuNDExIDEuNTE5LS43Ni0uMzczLTEuNDI1LTEuMTIyLTIuMDctMS42NTcuNTItLjYwOC45NzgtMS4xMzUgMS44NTMtLjg0LjI0LjA4LjQ0Ni0uMDI0LjE5NC0uMTctLjI2My0uMTUzLTIuMDIyLTEuMjc2LTIuMTE3LTEuMTY5LS4xNzUuMjAyLjM0My41NjQuMTQzLjk1Ny0uMTQ4LjI5LS4zOTYuNTQtLjYwNS43OS0uNDY3LS4zOTQtMS4yNDgtLjgxMy0uNjg1LTEuNDY0LjM1Mi0uNDI4LjgxMS0uNzYgMS4zNjEtLjg3LjM2OC0uMDc1IDEuMTk1LjI1MiAxLjMwMi0uMTQ2LS43MDUtLjM0LTEuNDEtLjY3Ny0yLjExNS0xLjAxNi4xMTUuNTItMi4xNzMgMi45MzctMi42ODEgMy41NDgtLjA3NC4wODgtLjQyNy4zOTUtLjQzMS41MTctLjAwNi4yNzguNDAzLjA2Mi40MjcuMDU0LjMxNS0uMTE2IDQuNDI0IDMuMzE3IDQuNTI2IDMuNTUyLjA2NS4xODItLjE0NC4zNzMtLjAyLjQ3NS0uMDA2LS4wMDYuMTQ4LjE0LjE2NS4xMi4yNTMtLjMwNCAyLjkzNi0zLjg4IDMuNDg5LTQuMDM2YTIzOS42NjQgMjM5LjY2NCAwIDAgMS0xLjUzNy0yLjM3MmMtLjM4My4xNjgtLjAxMy42MTYuMDcyLjkwM20tNCA0LjM1MmMtMS4zNDgtLjg3LTMuNjMzLjgzLTMuOTc2Ljk5NC0uNjc1LjMxOS0xLjE2Mi0uMzUzLS44MTItLjk3NS4zMDQtLjU0LjkwNC0uODAxIDEuNS0uODM3LjE4LS4wMS44NzUuMTI4Ljk0Ni4wMTcuMDg0LS4xMzEuMTQ4LS4xNDIuMDI4LS4yMjQtLjU1Ny0uMzc1LTEuMTEyLS43NS0xLjY2Ny0xLjEyNi0uMTE1LjY4NS0uOSAxLjEyMS0xLjM0OCAxLjU4NS0uNTM0LjU1NS0uOTg3IDEuMjUzLS45ODcgMi4wNSAwIC43MzYuNDQxIDEuMzkgMS4wODkgMS43MjYuNzM3LjM4NCAxLjUwNS4wNzYgMi4xNTgtLjMzMS40MDctLjI1NS44MTQtLjU1NiAxLjI0OS0uNzYuNjQ2LS4zMDMgMS40OTUtLjA0MSAxLjI2Ny44MjQtLjE4My42OTYtLjg3NiAxLjMzNy0xLjU2IDEuNTE5LS40LjEwNi0uODI1LjA3LTEuMjE2LS4wNTktLjI4LS4wOTEtLjY0NS0uNDc2LS43OTktLjA3MmwyLjI2IDEuNjQ3Yy4wNjgtLjQ5My4zNC0uNzA4LjcwNi0xLjAxNS40NzctLjQxOS45MzMtLjg1OCAxLjI5NC0xLjM4My43NTMtMS4xIDEtMi42MzgtLjEzMi0zLjU4bTE3LjYxNy0yOC4wNjVhLjIyMi4yMjIgMCAwIDAtLjA4OC4wNzJsLS43OS45NS0uODE0Ljk4MmMtLjE2OC4yMDQtLjM0OS4yOTYtLjAyNS40NjcuNTQzLS4yNzIgMy41MTggNC43NjggMy4yNTIgNS40OTItLjQ3LjI0NC00LjQ5LTMuMjgzLTQuNTk4LTMuNTE2LS4wMzMtLjA5NS4xNzgtLjY2Mi0uMTM2LS42MTMtLjE0OS4wMjMtLjQ4NC41ODMtLjU3OC42OTdsLS41NzcuNjk1Yy4yMTYuMzE1LjMzNi0uMDEzLjYyMy4wMjguMjQ5LjA1IDEuMTk4Ljg2NCAxLjQ1NiAxLjA4LS40Ny4wMTctMS43NDMuMDg2LTEuOTA1LjA3NC0uNTg2LjA3My0uMjc1LS40MzEtLjY2LS42MDVsLTEuNDc4IDEuNzk1LS44NiAxLjA0M2MtLjAzNS4wNDItLjAzLjAyLjAzMS4wNzIuMjE1LjE3Ny4wNjguMTA5LjM3LjAwNC4zMjgtLjExNSA0LjI1NiAzLjIgNC4zOTggMy4zNjkuMjQ1LjI5Mi0uMS42MzMuMjY4Ljc5M2wxLjE2OC0xLjQxOGMuMDU5LS4wNzIuMDkxLS4wNjYuMDEzLS4xMy0uMjc3LS4yMjgtLjMwOS4xMzgtLjY1LjEtLjM0Ni0uMDU3LTIuODU1LTIuMTg2LTMuODI4LTIuOTkybDUuMzIyLS4xOTdjLjE5NS0uMDA3Ljc0LjU4MS42OTUuNzktLjA1Mi4yNDQtLjMwMS4zNjEuMDM0LjUxNS4zMTEtLjM3NC42NC0uNzQ2Ljk0NS0xLjEyNWwuMTQ4LS4xODRhLjQ3OC40NzggMCAwIDAgLjEzNS0uMTcybC4xMS0uMTM3Yy4yNzUtLjMxNCAxLjE2OS0xLjMwMyAxLjA2Mi0xLjM5Ni0uMy0uMjYtLjQ0Ni4zMDItLjg0NC0uMDM1LS4yMjYtLjE2Mi0uNzkzLTEuMTYtLjkzNS0xLjQwMi0uMTcyLS4yOTIuMzk0LS41ODMuNjI1LS43MjcuNTA0LS4zMTMgMi4xMDctLjc2NyAyLjI2LjIyNy4wMjUuMTY3LS4xNzcuMzU3LS4wNTUuNDU3LjAyOC4wMjQuMTMzLjE1Ni4xNzYuMTA1bDIuMTQyLTIuNTc2Yy0uMDYzLS4wNTMtLjEzNS0uMTQ3LS4yMS0uMTc2LS40NzQuNDczLTUuNDY2LTEuNTItNS44My0xLjc5NS0uMTY2LS4wNjYtLjE5Mi0uNjczLS4zNzItLjYxMXptLS4yMjUgMi41NTNjLjc2NC4zMTggMS41MjYuNjM4IDIuMjg3Ljk2LS4yMy4wNjQtLjQ0Ny4xNjYtLjY0OC4yOTNoLS4wMDJhMy43MSAzLjcxIDAgMCAwLS42MjEuNDk1bC0xLjAxNi0xLjc0OHptLTYuNTg4IDcuNzUzYy0xLjEwNy0uMDc2LTIuMjMuNDEtMy4wMjMgMS4zMTctMS4yMzUgMS41LTEuMTEyIDMuNjc4LjM5MyA0Ljk0NSAxLjUxOCAxLjI1IDMuNjguOTMyIDQuOTE2LS41NSAxLjIzMi0xLjQ5NiAxLjE0Ny0zLjY4LS4zODUtNC45MzRhMy4zMDIgMy4zMDIgMCAwIDAtMS45LS43Nzh6bS0xLjQ0OSAxLjU1OWMuNjIyLjAzOCAxLjMxLjQxNCAxLjc0Mi43MDMuNzguNTIxIDIuMjE0IDEuNjg3IDEuNDc3IDIuNzM4LjA0OC0uMDU4LjA4My0uMDk3LS4wNS4wN2EuMTYyLjE2MiAwIDAgMS0uMDE4LjAxOGMtLjguODQtMi4xOC4wNjMtMi45MjQtLjQ3NC0uNzQ1LS41MzgtMi4wMjItMS42NjgtMS4yMDctMi42NjQuMjU3LS4zMTQuNjA3LS40MTQuOTgtLjM5MXptLTMuMTI3IDQuMjhjLTEuMjE0LS4wNjctMi40MDMuNDk2LTMuMjk5IDEuNTc2LS42NDIuNzcxLTEuMjgyIDEuNTQ0LTEuOTIyIDIuMzE2LjIyOC4zMzIuNDk1LS4wNzguODI3LjExMy4yODMuMTYzIDQuMDUzIDMuMzEyIDQuMTE1IDMuNDg1LjEwNi4yOTctLjE2NS4zNTYuMDk0LjU2OC4xMTEuMDkzIDIuOTQ0LTMuNDA1IDMuMjAzLTQuMDIuNDQ4LTEuMTM5LjA5MS0yLjM4Ny0uODItMy4xNzUuMDczLjA2LjE3Ny4xNDUtLjA0Mi0uMDM3LS42OS0uNTE4LTEuNDI3LS43ODctMi4xNTYtLjgyN3ptLTEuMDUzIDEuNThjLjA5NS4wMDMuMTg0LjAxNi4yNjYuMDM3IDEuNDIyLjM2MyAzLjM4NCAyLjExNSAyLjEyOSAzLjYyOC0uMTU2LjE5My0uMDI5LjAzNS0uNDMyLjQyMi0uMTk4LjE5LTQuMTc5LTMuMDM0LTQuMDItMy4yMDkuNDc1LS41MjEgMS4zOTYtLjkwNCAyLjA1Ny0uODc5eiIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K" width="140" height="71" alt="Логотип">
+        </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo.html">Фотографии и видео</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+          <li class="site-navigation-item"><a href="photo.html">Фотографии и видео</a></li>
+          <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
+          <li class="site-navigation-item"><a class="current" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -29,48 +29,61 @@
         <h2 class="visually-hidden">Фильтр</h2>
         <div class="form">
           <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-          <div class="grade">
-            <fieldset>
-              <legend>Инфраструктура:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input id="filter-pool" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
-                  <label for="filter-pool">Бассейн</label>
-                </li>
-                <li class="filter-option">
-                  <input id="filter-parking" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
-                  <label for="filter-parking">Парковка</label>
-                </li>
-                <li class="filter-option">
-                  <input id="filter-wi-fi" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
-                  <label for="filter-wi-fi">Wi-Fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="fieldset-grade">
-              <legend>Тип жилья:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input id="filter-hotel" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
-                  <label for="filter-hotel">Гостиница</label>
-                </li>
-                <li class="filter-option">
-                  <input id="filter-motel" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
-                  <label for="filter-motel">Мотель</label>
-                </li>
-                <li class="filter-option">
-                  <input id="filter-apartments" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
-                  <label for="filter-apartments">Апартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-            <fieldset>
-              <legend>Стоимость в сутки (Р):</legend>
-              <!-- Здесь будет фильтр  -->
+            <div class="grade">
+              <fieldset class="fieldset-option">
+                <legend>Инфраструктура:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input id="filter-pool" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
+                    <label for="filter-pool">Бассейн</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="filter-parking" class="visually-hidden filter-input filter-input-checkbox-off" type="checkbox" name="parking">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="filter-wi-fi" class="visually-hidden filter-input filter-input-checkbox-off" type="checkbox" name="wi-fi">
+                    <label for="filter-wi-fi">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="fieldset-grade">
+                <legend>Тип жилья:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input id="filter-hotel" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
+                    <label for="filter-hotel">Гостиница</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="filter-motel" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+                    <label for="filter-motel">Мотель</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="filter-apartments" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+                    <label for="filter-apartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <fieldset class="range-fieldset">
+              <legend class="range-price">Стоимость в сутки (Р):</legend>
+              <div class="price-controls">
+                <label class="min-price">от
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">до
+                  <input type="text" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
               <button class="button filter-button" type="submit">Показать</button>
             </fieldset>
-            <!-- Изображение вставлю фоном -->
           </form>
         </div>
         <div class="sort">
@@ -87,120 +100,121 @@
               <button>По рейтингу</button>
             </li>
           </ul>
-        </div>
-        <div class="sort-switch">
-          <!-- Здесь будет переключалка-->
-          <button class="sort-switch">
-            <span class="visually-hidden">По убыванию</span>
-            <!-- <svg> -->
-          </button>
-          <button class="sort-switch">
-            <span class="visually-hidden">По возрастанию</span>
-            <!-- <svg> -->
-          </button>
+          <div class="sort-switch">
+            <button class="button-sort-switch-up">
+              <span class="visually-hidden">По возрастанию</span>
+              <span class=switch-up></span>
+            </button>
+            <button class="button-sort-switch-down">
+              <span class="visually-hidden">По убыванию</span>
+              <span class=switch-down></span>
+            </button>
+          </div>
         </div>
       </section>
       <section class="catalog">
-        
         <ul class="catalog-list">
           <li>
-            <a href="catalog-item.html">
+            <a href="catalog-item.html" class="catalog-item-img">
               <img src="img/amara.png" width="135" height="90" alt="Amara Resort & Spa">
             </a>
             <div class="catalog-hotel-desc">
               <h2 class="pick"><a href="catalog-item.html">Amara Resort & Spa</a></h2>
-            <div class="brand">
-              <div class="catalog-hotel-type">
-                <p>Гостиница</p>
-                <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
-              </div>
-            <div class="catalog-hotel-price">
-              <p>От 4000 Р.</p>
-              <a href="#" class="button button-reserve">Забронировать</a>
-            </div>
-            <div class="rate">
-              <p class="stars stars-four"><span class="visually-hidden">4 звезды</span></p>
-              <p class="rating">Рейтинг 8,5</p>
-            </div>
-          </div>
-        </div>
-          </li>
-          <li>
-            <a href="catalog-item.html">
-                <img src="img/desert.png" width="135" height="90" alt="Desert Quail Inn">
-            </a>
-            <div class="catalog-hotel-desc">
-              <h2 class="pick"><a  href="catalog-item.html">Desert Quail Inn</a></h2>
               <div class="brand">
                 <div class="catalog-hotel-type">
-                <p>Мотель</p>
-                <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
+                  <p>Гостиница</p>
+                  <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
+                </div>
+                <div class="catalog-hotel-price">
+                  <p>От 4000 Р.</p>
+                  <a href="#" class="button button-reserve">Забронировать</a>
+                </div>
               </div>
-              <div class="catalog-hotel-price">
-                <p>От 3000 Р.</p>
-                <a href="#" class="button button-reserve">Забронировать</a>
-              </div>
+            </div>
             <div class="rate">
-              <p class="stars stars-three"><span class="visually-hidden">3 звезды</span></p>
-              <p class="rating">Рейтинг 8,9</p>
+              <p class="stars stars-four">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+              <p class="rating">Рейтинг 8,5</p>
             </div>
-            </div>
-          </div>
           </li>
           <li>
-            <a href="catalog-item.html">
+            <a href="catalog-item.html" class="catalog-item-img">
+              <img src="img/desert.png" width="135" height="90" alt="Desert Quail Inn">
+            </a>
+            <div class="catalog-hotel-desc">
+              <h2 class="pick"><a href="catalog-item.html">Desert Quail Inn</a></h2>
+              <div class="brand">
+                <div class="catalog-hotel-type">
+                  <p>Мотель</p>
+                  <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
+                </div>
+                <div class="catalog-hotel-price">
+                  <p>От 3000 Р.</p>
+                  <a href="#" class="button button-reserve">Забронировать</a>
+                </div>
+              </div>
+            </div>
+            <div class="rate">
+              <p class="stars stars-three"><span class="visually-hidden">3 звезды</span></p>
+              <p class="rating">Рейтинг 8,5</p>
+            </div>
+          </li>
+          <li>
+            <a href="catalog-item.html" class="catalog-item-img">
               <img src="img/villas.png" width="135" height="90" alt="Villas at Poco Diablo">
             </a>
             <div class="catalog-hotel-desc">
-              <h2 class="pick"><a  href="catalog-item.html">Villas at Poco Diablo</a></h2>
+              <h2 class="pick"><a href="catalog-item.html">Villas at Poco Diablo</a></h2>
               <div class="brand">
                 <div class="catalog-hotel-type">
-                <p>Апартаменты</p>
-                <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
+                  <p>Аппартаменты</p>
+                  <a href="catalog-item.html" class="button button-hotel-more">Подробнее</a>
+                </div>
+                <div class="catalog-hotel-price">
+                  <p>От 2000 Р.</p>
+                  <a href="#" class="button button-reserve">Забронировать</a>
+                </div>
               </div>
-              <div class="catalog-hotel-price">
-                <p>От 2000 Р.</p>
-                <a href="#" class="button button-reserve">Забронировать</a>
-              </div>
-              <div class="rate">
-              <p class="stars stars-two"><span class="visually-hidden">2 звезды</span></p>
-              <p class="rating">Рейтинг 9,2</p>
             </div>
-          </div>
-        </div>
+            <div class="rate">
+              <p class="stars stars-two"><span class="visually-hidden">2 звезды</span></p>
+              <p class="rating">Рейтинг 8,5</p>
+            </div>
           </li>
         </ul>
       </section>
-    </main>
-    <footer class="main-footer">
-      <p class="footer-visit">#visitSedona></p>
-      <ul class="footer-social">
-        <li>
-          <a href="#" class="button-social">
+      </main>
+      <footer class="main-footer">
+        <p class="footer-visit">#visitSedona></p>
+        <ul class="footer-social">
+          <li>
+            <a href="#" class="button-social">
             <span class="visually-hidden">Твитер</span>
-            <!-- <svg> -->
-          </a>
-        </li>
-        <li>
-          <a href="#" class="button-social">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+        </a>
+          </li>
+          <li>
+            <a href="#" class="button-social">
             <span class="visually-hidden">Фейсбук</span>
-            <!-- <svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
           </a>
-        </li>
-        <li>
-          <a href="#" class="button-social">
+          </li>
+          <li>
+            <a href="#" class="button-social">
             <span class="visually-hidden">Ютуб</span>
-            <!-- <svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
           </a>
-        </li>
-      </ul>
-      <div class="footer-copyright">
-        <p class="copyright-desc">Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo">HTML<br>academy</a>
-        <!-- Иконку добавлю в CSS -->
-      </div>
-    </footer>
-  </div>
-</container>
-</body>
+          </li>
+        </ul>
+        <div class="footer-copyright">
+          <p class="copyright-desc">Website by</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo">
+          <span class="visually-hidden">HTML<br>academy</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85"><title>logo-htmlacademy-small1</title><path d="M44.61,26.88a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,39.63,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1,0-2.16.33-2.16,1.38h0Zm12.36-6.11a5,5,0,0,1,2.57.64V22a4.08,4.08,0,0,0-2.3-.7,2.75,2.75,0,1,0,0,5.49,5,5,0,0,0,2.43-.64v1.71a6.27,6.27,0,0,1-2.76.57A4.21,4.21,0,0,1,46,24.51q0-.21,0-0.41a4.32,4.32,0,0,1,4.18-4.46h0.38Zm12.17,7.24a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,57.73,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1.06,0-2.16.33-2.16,1.38h0ZM73,16V28.2H71.35V26.88a3.88,3.88,0,0,1-3.19,1.54,4.4,4.4,0,0,1,0-8.78,3.81,3.81,0,0,1,3,1.3V16H73Zm-4.53,5.22a2.76,2.76,0,1,0,0,5.52A2.86,2.86,0,0,0,71.15,25V23A2.91,2.91,0,0,0,68.49,21.27ZM79,19.64c3.31,0,4.46,2.68,3.92,5.09H76.7c0.21,1.5,1.67,2.11,3.19,2.11a6.11,6.11,0,0,0,2.64-.59v1.6a7.14,7.14,0,0,1-3,.57C77,28.42,74.78,27,74.78,24a4.18,4.18,0,0,1,4-4.39H79Zm0.09,1.54a2.28,2.28,0,0,0-2.44,2.1v0.06H81.3A2,2,0,0,0,79.13,21.18Zm5.73,7V19.87h1.65v1a3.81,3.81,0,0,1,2.78-1.27A2.86,2.86,0,0,1,91.89,21a4.12,4.12,0,0,1,2.91-1.33A3.06,3.06,0,0,1,98,23V28.2h-1.9V23.05a1.59,1.59,0,0,0-1.42-1.75H94.42a2.8,2.8,0,0,0-2.07,1.12V28.2h-1.9V23.05A1.59,1.59,0,0,0,89,21.31H88.8a3,3,0,0,0-2.21,1.29v5.63H84.86Zm21.31-8.33h1.9l-3.91,9.46c-0.9,2.17-2.09,2.86-3.35,2.86a4.76,4.76,0,0,1-1.1-.14V30.46a2.86,2.86,0,0,0,.85.12c0.9,0,1.58-.64,2.07-1.9l0.17-.42-4-8.4h2l2.86,6.29ZM38.73,1.46V6.22a3.81,3.81,0,0,1,2.7-1.14,3.25,3.25,0,0,1,3.44,3.4v5.15H43V8.72a1.81,1.81,0,0,0-1.61-2h-0.3a2.93,2.93,0,0,0-2.32,1.39v5.52h-1.9V1.46h1.9ZM49.94,2.31v3h3V6.91h-3v3.81c0,1.1.5,1.46,1.58,1.46a4.49,4.49,0,0,0,1.69-.33v1.6A6.8,6.8,0,0,1,51,13.8a2.55,2.55,0,0,1-2.86-2.74V6.89H46.58V5.26h1.5V2.74Zm5.4,11.31V5.28H57v1A3.81,3.81,0,0,1,59.77,5a2.86,2.86,0,0,1,2.6,1.33A4.12,4.12,0,0,1,65.28,5,3.06,3.06,0,0,1,68.44,8.4v5.21h-1.9V8.46a1.59,1.59,0,0,0-1.42-1.75H64.89a2.8,2.8,0,0,0-2.07,1.12v5.78h-1.9V8.46A1.59,1.59,0,0,0,59.5,6.71H59.27A3,3,0,0,0,57.06,8v5.63H55.34ZM71.17,1.45H73V13.6H71.17V1.45ZM14.71,0H14.55L0,1.54V28.21l14.55,8.66,14.55-8.66V1.54Zm12.5,27.1L14.55,34.64,1.9,27.12V16.18l12.59,7.5V25L5.86,19.9v1.31l8.68,5.21v1.39L5.87,22.65V24l8.68,5.21,8.75-5.24V18.31L27.2,16V27.12Zm0-12.53-3.48,2-1.6,1L14.51,13v1.31L21,18.23H21l-0.14.09-1,.54-5.37-3.2V17l4.24,2.52-1,.67-3.2-1.9v1.31l2.1,1.24L14.5,22.1,2,14.65,14.51,7.11Zm0-1.32L14.49,5.76,1.91,13.25v-10L14.56,1.92,27.21,3.25v10h0Z" transform="translate(0 -0.02)" fill="#231f20"/></svg>
+        </a>
+        </div>
+      </footer>
+      </container>
+
 </html>
