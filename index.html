@@ -117,30 +117,34 @@
               </label>
             </div>
             <div class="invitation-guests">
-              <label class="invitation-adult">
-                <p>Взрослые</p>
+              <div class="invitation-adult">
+                <label for="adult">Взрослые</label>
                 <div class="invitation-minus">
-                  <a href="#" class="button-invitation invitation-less">
-                  <span class="visually-hidden">меньше</span></a>
+                  <button href="#" class="button-invitation invitation-less" type="button">
+                    <span class="visually-hidden">меньше</span>
+                  </button>
                 </div>
-                <input type="text" name="adult" value="" placeholder="2">
+                <input id="adult" type="text" name="adult" value="" placeholder="2">
                 <div class="invitation-plus">
-                  <a href="#" class="button-invitation invitation-more">
-                <span class="visually-hidden">больше</span></a>
+                  <button href="#" class="button-invitation invitation-more" type="button">
+                    <span class="visually-hidden">больше</span>
+                  </button>
                 </div>
-              </label>
-              <label class="invitation-child">
-                <p>Дети</p>
+              </div>
+              <div class="invitation-child">
+                <label for>Дети</label>
                 <div class="invitation-minus">
-                  <a href="#" class="button-invitation invitation-less">
-                <span class="visually-hidden">меньше</span></a>
+                  <button href="#" class="button-invitation invitation-less" type="button">
+                    <span class="visually-hidden">меньше</span>
+                  </button>
                 </div>
-                <input type="text" name="child" value="" placeholder="0">
+                <input id="child" type="text" name="child" value="" placeholder="0">
                 <div class="invitation-plus">
-                  <a href="#" class="button-invitation invitation-more">
-                <span class="visually-hidden">больше</span></a>
+                  <button href="#" class="button-invitation invitation-more" type="button">
+                    <span class="visually-hidden">больше</span>
+                  </button>
                 </div>
-              </label>
+              </div>
             </div>
             <button class="button invitation-form-button" type="submit">Найти</button>
           </form>
@@ -183,7 +187,7 @@
         </a>
       </div>
     </footer>
-    </container>
+  </div>
 </body>
 
 </html>
