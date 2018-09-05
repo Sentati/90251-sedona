@@ -18,7 +18,7 @@
         </a>
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="info.html">Информация</a></li>
-          <li class="site-navigation-item"><a href="photo.html">Фотографии и видео</a></li>
+          <li class="site-navigation-item"><a href="photo.html">Фото и видео</a></li>
           <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
           <li class="site-navigation-item"><a class="current" href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -42,7 +42,7 @@
                     <label for="filter-parking">Парковка</label>
                   </li>
                   <li class="filter-option">
-                    <input id="filter-wi-fi" class="visually-hidden filter-input filter-input" type="checkbox" name="wi-fi" checked>
+                    <input id="filter-wi-fi" class="visually-hidden filter-input filter-input" type="checkbox" name="wi-fi">
                     <label for="filter-wi-fi">Wi-Fi</label>
                   </li>
                 </ul>
@@ -65,6 +65,7 @@
                 </ul>
               </fieldset>
             </div>
+            <div class="range">
             <fieldset class="range-fieldset">
               <legend class="range-price">Стоимость в сутки (Р):</legend>
               <div class="price-controls">
@@ -84,20 +85,21 @@
               </div>
               <button class="button filter-button" type="submit">Показать</button>
             </fieldset>
+          </div>
           </form>
         </div>
         <div class="sort">
           <p class="sort-result">Найдено: 3</p>
-          <p class="sort-select">Сортировка</p>
+          <p class="sort-select">Сортировка:</p>
           <ul class="sort-list">
             <li class="sort-current">
-              <button>По цене</button>
+              <a href=catalog.html" name="price">По цене</a>
             </li>
             <li class="sort-current">
-              <button>По типу</button>
+              <a href="#" >По типу</a>
             </li>
             <li class="sort-current">
-              <button>По рейтингу</button>
+              <a href="#">По рейтингу</a>
             </li>
           </ul>
           <div class="sort-switch">
@@ -186,7 +188,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="footer-visit">#visitSedona></p>
+      <p class="footer-visit">#visitSedona</p>
       <ul class="footer-social">
         <li>
           <a href="#" class="button-social">
