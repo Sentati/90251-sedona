@@ -79,6 +79,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 50%;
   top: 0;
+  z-index: 10;
   transform: translateX(-50%);
 }
 
@@ -132,16 +133,26 @@ input[type="radio"].visually-hidden {
 .main {}
 
 .offer {
+  position: relative;
   display: flex;
   justify-content: center;
   background-color: #969fa5;
-  background-image: url("../img/intro-mask.svg"), url("../img/bg.jpg");
-  background-position: 50% 100%, 0 22%;
+  background-image: url("../img/bg.jpg");
+  background-position: 0 22%;
   background-repeat: no-repeat;
   padding: 76px 0 80px;
 }
 
-.offer-title {}
+.offer:before {
+  position:absolute;
+  bottom: 0;
+  left:0;
+  content:"";
+  display: block;
+  width: 100%;
+  height: 57px;
+    background-image: url("../img/intro-mask.svg");
+}
 
 
 
@@ -225,6 +236,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reason-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,12 +247,14 @@ input[type="radio"].visually-hidden {
 .item-house::before {
   content: "";
   position: absolute;
+  left:50%;
+  transform: translateX(-50%);
   width: 72px;
-  height: 73px;
+  height: 72px;
   margin-bottom: 70px;
   background-image: url("../img/icon-1.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  /*background-repeat: no-repeat;*/
+  /*background-position: 50% 50%;*/
 }
 
 .reason-item-title {
@@ -255,6 +269,8 @@ input[type="radio"].visually-hidden {
 .item-food::before {
   content: "";
   position: absolute;
+  left:50%;
+  transform: translateX(-50%);
   width: 72px;
   height: 72px;
   margin-bottom: 66px;
@@ -266,6 +282,8 @@ input[type="radio"].visually-hidden {
 .item-souvenirs::before {
   content: "";
   position: absolute;
+  left:50%;
+  transform: translateX(-50%);
   width: 72px;
   height: 76px;
   margin-bottom: 70px;
@@ -785,12 +803,12 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
 }
 
 .price-controls {
   position: relative;
-  width: 316px;
+  width: 318px;
   height: 36px;
   font-size: 0;
   margin-bottom: 20px;
@@ -817,6 +835,10 @@ input[type="radio"].visually-hidden {
   width: 155px;
   padding-left: 65px;
   cursor: pointer;
+}
+
+.price-controls .max-price {
+  padding-left: 55px;
 }
 
 .price-controls input {
@@ -848,18 +870,19 @@ input[type="radio"].visually-hidden {
 .range-toggle {
   position: absolute;
   top: -9px;
-  width: 4px;
-  height: 4px;
-
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  width: 20px;
+  height: 22px;
+  background-image: url("../img/filter-button.svg");
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  width: 22px;
+  height: 24px;
+  background-size: 100%;
+  transform: translate(-1px,-1px);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .range-toggle-min {
@@ -872,7 +895,7 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
   display: block;
-  margin: 0 auto;
+  margin-left: 86px;
   width: 135px;
   height: 35px;
   color: #ffffff;
@@ -884,6 +907,7 @@ input[type="radio"].visually-hidden {
 .filter-button:active {
   color: #000000;
   background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border: none;
 }
 
@@ -916,35 +940,34 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
 }
 
-.sort-current {
+.sort-item {
   margin-right: 34px;
 }
 
-.sort-current a {
-  color: #81b3d2;
+.sort-item a {
+  color: #cacaca;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
   border: 0;
+  border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-current a:hover {
+.current a {
+  color: #81b3d2;
+  border: 0;
+}
+
+.sort-item a:hover {
   color: #81b3d2;
   border: 0;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-current a:active {
+.sort-item a:active {
   color: #000000;
   border: 0;
-}
-
-.sort-current a:visited {
-  color: #cacaca;
-  text-transform: uppercase;
-  border: 0;
-  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-switch {
@@ -981,7 +1004,6 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: none;
 }
-
 .switch-up::after,
 .switch-down::after {
   position: absolute;
@@ -1000,6 +1022,10 @@ input[type="radio"].visually-hidden {
 .switch-down::after {
   transform: rotate(180deg);
   margin-top: -6px;
+}
+
+.sort-switch:checked::after {
+  border-bottom: 12px solid #81b3d2;
 }
 
 .switch-up:hover::after,
