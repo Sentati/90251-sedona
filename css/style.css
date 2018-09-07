@@ -23,7 +23,7 @@ a {
 }
 
 img {
-  max-widht: 100% height auto;
+  max-widht: 100%;
 }
 
 .button {
@@ -394,6 +394,7 @@ input[type="radio"].visually-hidden {
 
 .invitation-form {
   background-color: #ffffff;
+  color: #000000;
   position: absolute;
   width: 568px;
   left: 50%;
