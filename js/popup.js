@@ -12,11 +12,26 @@
 
     var child = form.querySelector(".js-child");
 
+    var isStorageSupport = true;
+    var storage = "";
+  
+    try {
+    storage = localStorage.getItem("adult");
+    } catch (err) {
+    isStorageSupport = false;
+    }
+
     search.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.toggle("invitation-modal-close");
       popup.classList.remove("invitation-modal-error");
+      entry.focus();
   });
+
+    if (storage) {
+      adult.value = storage;
+      child.value = storage;
+    }
 
     window.onload = popup.classList.toggle("invitation-modal-close");
 
@@ -37,5 +52,11 @@
       popup.classList.remove("invitation-modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("invitation-modal-error");
+      } else {
+      if (isStorageSupport) {
+        localStorage.setItem("adult", adult.value);
+        localStorage.setItem("child", child.value);
+      }
     }
   });
+
