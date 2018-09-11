@@ -226,6 +226,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/index-reason-bg.jpg");
   background-color: #d79071;
   background-position: 0 50%;
+  background-repeat: no-repeat;
 }
 
 .reason-list {
@@ -306,6 +307,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/index-reason-bg-1.jpg");
   background-color: #d79071;
   width: 66.666%;
+  background-repeat: no-repeat;
 }
 
 .reason-others {
@@ -389,10 +391,53 @@ input[type="radio"].visually-hidden {
 }
 
 .button-calendar:active {
+  color: #928a85;
   background-color: #503e33;
 }
 
-.invitation-form {
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  70% {
+    transform: translate(-50%, 1%);
+  }
+
+  90% {
+    transform: translate(-50%, -2%);
+  }
+
+  100% {
+    transform: translateY(-50%, 0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-51%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-49%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-51%);
+  }
+}
+
+.invitation-modal {
+  display: block;
+  z-index: 3;
   background-color: #ffffff;
   color: #000000;
   position: absolute;
@@ -401,9 +446,29 @@ input[type="radio"].visually-hidden {
   top: 100%;
   transform: translateX(-50%);
   padding-bottom: 55px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
-.invitation-form-search {
+.invitation-modal-close {
+  display: none;
+  z-index: 3;
+  background-color: #ffffff;
+  color: #000000;
+  position: absolute;
+  width: 568px;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  padding-bottom: 55px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  animation: bounce 0.6s;
+}
+
+.invitation-modal-error {
+  animation: shake 0.6s;
+}
+
+.invitation-form {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -435,11 +500,14 @@ input[type="radio"].visually-hidden {
   height: 38px;
   padding-left: 12px;
   padding-right: 30px;
+  border: 0
+  outline: 0;
 }
 
 .button-invitation-calendar {
   margin-left: -30px;
   margin-top: 8px;
+  background: transparent;
 }
 
 .button-invitation-calendar path {
@@ -563,6 +631,7 @@ input[type="radio"].visually-hidden {
 
 .invitation-form-item input,
 .invitation-guests input {
+  display; inline-block;
   font: inherit;
   text-transform: uppercase;
   outline: none;
@@ -571,12 +640,25 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
 }
 
-.invitation-form-item input:hover {
+.invitation-form-item input:hover,
+.invitation-guests input: hover {
+  display; inline-block;
   background-color: #ebebeb;
 }
 
-.invitation-form-item input:active {
+.invitation-form-item input:active,
+.invitation-guests input:active {
+  display; inline-block;
   background-color: #ffffff;
+    border: 0
+  outline: 0;
+}
+
+.invitation-form-item input:focus,
+.invitation-guests input:focus {
+  display; inline-block;
+  background-color: #ffffff;
+  outline: 2px solid #e5e5e5;
 }
 
 .invitation-form-button {
@@ -597,6 +679,7 @@ input[type="radio"].visually-hidden {
 }
 
 .invitation-form-button:active {
+  color: #94b9d2;
   background-color: #5496bd;
 }
 
@@ -605,10 +688,24 @@ input[type="radio"].visually-hidden {
 
 /* map */
 
-.map {}
+.map {
+  border: none;
+}
 
+.js-map {
+  position: relative;
+}
 
+.map-img {
+  position: absolute;
+  top: 0;
+}
 
+.js-map iframe {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 115px;
+}
 
 /* footer */
 
@@ -618,12 +715,12 @@ input[type="radio"].visually-hidden {
   padding: 36px 0;
 }
 
-.footer_index {
+.footer-index {
+  position: relative;
   display: flex;
   align-content: center;
   padding: 36px 0;
-  opacity: 0.9;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
   margin-top: -120px;
 }
 
@@ -774,6 +871,10 @@ input[type="radio"].visually-hidden {
 
 .filter-input:checked+label::after {
   background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-input:focus+label  {
+  outline: 1px solid #ffffff;
 }
 
 .filter-form ul {
@@ -1125,6 +1226,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-hotel-more:active {
+  color: #94b9d2;
   background-color: #5496bd;
 }
 
@@ -1143,6 +1245,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-reserve:active {
+  color: #928a85;
   background-color: #503e33;
 }
 

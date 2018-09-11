@@ -6,16 +6,14 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип">
-      </a>
+        <a class="main-header-logo"><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип"></a>
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="info.html">Информация</a></li>
           <li class="site-navigation-item"><a href="photo.html">Фото и видео</a></li>
@@ -92,29 +90,36 @@
         <h2 class="visually-hidden">Приезжайте в Седону</h2>
         <div class="invitation-lead">
           <span class="invitation-title">Заинтересовались?</span>
-          <p class="invitation-desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="invitation-desc">Укажите предполагаемые даты поездки,
+            <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button button-calendar" type="button">Поиск гостиницы в Седоне</button>
         </div>
-        <div class="invitation-form">
-          <form class="invitation-form-search" action="https://echo.htmlacademy.ru" method="post">
+        <div class="invitation-modal">
+          <form class="invitation-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="invitation-form-item">
               <p class="invitation-date">
                 <label>Дата заезда:</label>
-                <input type="text" name="date" value="24 апреля 2017">
-                <a href="#" class="button button-invitation-calendar">
+                <input class="js-enter" type="text" name="date" value="24 апреля 2017" autocomplete="off">
+                <button class="button button-invitation-calendar" type="button">
                   <span class="visually-hidden">Календарь</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-              </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                  </svg>
+                </button>
               </p>
             </div>
             <div class="invitation-form-item departure">
               <p class="invitation-date">
                 <label>Дата выезда:</label>
-                <input type="text" name="date" value="4 июля 2017">
-                <a href="#" class="button button-invitation-calendar">
-                    <span class="visually-hidden">Календарь</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-                  </a>
+                <input class="js-departure" type="text" name="date" value="4 июля 2017" autocomplete="off">
+                <button class="button button-invitation-calendar" type="button" >
+                  <span class="visually-hidden">Календарь</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                  </svg>
+                </button>
               </p>
             </div>
             <div class="invitation-guests">
@@ -125,7 +130,7 @@
                     <span class="visually-hidden">меньше</span>
                   </button>
                 </div>
-                <input id="adult" type="text" name="adult" value="2">
+                <input id="adult" class="js-adult" type="text" name="adult" value="2" autocomplete="off">
                 <div class="invitation-plus">
                   <button class="button-invitation invitation-more" type="button">
                     <span class="visually-hidden">больше</span>
@@ -139,7 +144,7 @@
                     <span class="visually-hidden">меньше</span>
                   </button>
                 </div>
-                <input id="child" type="text" name="child" value="0">
+                <input id="child" class="js-child" type="text" name="child" value="0" autocomplete="off">
                 <div class="invitation-plus">
                   <button class="button-invitation invitation-more" type="button">
                     <span class="visually-hidden">больше</span>
@@ -153,12 +158,16 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как добраться</h2>
-        <p>
+      <div class=js-map>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050594222!2d-111.83015780954669!3d34.85437338108609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1536607304825" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p class="map-img">
           <img src="img/map.png" width="1200" height="587" alt="Карта штата">
         </p>
+      </div>
+
       </section>
     </main>
-    <footer class="main-footer footer_index">
+    <footer class="main-footer footer-index">
       <p class="footer-visit">#visitSedona</p>
       <ul class="footer-social">
         <li>
@@ -189,6 +198,9 @@
       </div>
     </footer>
   </div>
+
+  <script src=js/popup.js></script>
+
 </body>
 
 </html>
