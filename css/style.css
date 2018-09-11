@@ -667,8 +667,10 @@ input[type="radio"].visually-hidden {
 
 /* map */
 
-.map {
+.map iframe{
   border: none;
+  width: 1200px;
+  height: 600px;
 }
 
 .js-map {
